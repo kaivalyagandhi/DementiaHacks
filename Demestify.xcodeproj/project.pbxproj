@@ -35,10 +35,8 @@
 		FA3204D11BEE4275007CE6E6 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3204D01BEE4275007CE6E6 /* libsqlite3.tbd */; };
 		FA3204D41BEE56D7007CE6E6 /* PetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3204D31BEE56D7007CE6E6 /* PetModel.swift */; };
 		FA3204D71BEE624D007CE6E6 /* CaregiversModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3204D51BEE624D007CE6E6 /* CaregiversModuleViewController.swift */; };
-		FA3204D81BEE624D007CE6E6 /* CaregiversModuleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA3204D61BEE624D007CE6E6 /* CaregiversModuleViewController.xib */; };
 		FA3204DC1BEE6EFC007CE6E6 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3204DA1BEE6EFC007CE6E6 /* StoreViewController.swift */; };
-		FA3204DD1BEE6EFC007CE6E6 /* StoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA3204DB1BEE6EFC007CE6E6 /* StoreViewController.xib */; };
-		FA3204DF1BEE767F007CE6E6 /* Store Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3204DE1BEE767F007CE6E6 /* Store Constants.swift */; };
+		FA3204DF1BEE767F007CE6E6 /* Store Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3204DE1BEE767F007CE6E6 /* Store Model.swift */; };
 		FA3205581BEE8148007CE6E6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FA3205571BEE8148007CE6E6 /* Podfile */; };
 		FA7BE53A1BEE88F6005C314B /* MZBlurEffectAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7BE5211BEE88F6005C314B /* MZBlurEffectAdapter.m */; };
 		FA7BE53B1BEE88F6005C314B /* MZFormSheetContentSizingNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7BE5231BEE88F6005C314B /* MZFormSheetContentSizingNavigationController.m */; };
@@ -55,6 +53,10 @@
 		FAAFA5701BEE8A6500CC408B /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAFA56F1BEE8A6500CC408B /* Accounts.framework */; };
 		FAAFA5721BEE8BBA00CC408B /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAFA5711BEE8BBA00CC408B /* libstdc++.6.tbd */; };
 		FAAFA5741BEE8D6500CC408B /* Parse Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFA5731BEE8D6500CC408B /* Parse Helper.swift */; };
+		FAAFA5771BEE9B0000CC408B /* FoodItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFA5751BEE9B0000CC408B /* FoodItemCollectionViewCell.swift */; };
+		FAAFA5781BEE9B0000CC408B /* FoodItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAFA5761BEE9B0000CC408B /* FoodItemCollectionViewCell.xib */; };
+		FAAFA57B1BEE9B0F00CC408B /* ClothingItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFA5791BEE9B0F00CC408B /* ClothingItemCollectionViewCell.swift */; };
+		FAAFA57C1BEE9B0F00CC408B /* ClothingItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAFA57A1BEE9B0F00CC408B /* ClothingItemCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,10 +113,8 @@
 		FA3204D01BEE4275007CE6E6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		FA3204D31BEE56D7007CE6E6 /* PetModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetModel.swift; sourceTree = "<group>"; };
 		FA3204D51BEE624D007CE6E6 /* CaregiversModuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaregiversModuleViewController.swift; sourceTree = "<group>"; };
-		FA3204D61BEE624D007CE6E6 /* CaregiversModuleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CaregiversModuleViewController.xib; sourceTree = "<group>"; };
 		FA3204DA1BEE6EFC007CE6E6 /* StoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
-		FA3204DB1BEE6EFC007CE6E6 /* StoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoreViewController.xib; sourceTree = "<group>"; };
-		FA3204DE1BEE767F007CE6E6 /* Store Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store Constants.swift"; sourceTree = "<group>"; };
+		FA3204DE1BEE767F007CE6E6 /* Store Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store Model.swift"; sourceTree = "<group>"; };
 		FA3204E11BEE7A0C007CE6E6 /* Demestify-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demestify-Bridging-Header.h"; sourceTree = "<group>"; };
 		FA3205571BEE8148007CE6E6 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
 		FA7BE5201BEE88F6005C314B /* MZBlurEffectAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZBlurEffectAdapter.h; sourceTree = "<group>"; };
@@ -147,6 +147,10 @@
 		FAAFA56F1BEE8A6500CC408B /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		FAAFA5711BEE8BBA00CC408B /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
 		FAAFA5731BEE8D6500CC408B /* Parse Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Parse Helper.swift"; sourceTree = "<group>"; };
+		FAAFA5751BEE9B0000CC408B /* FoodItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		FAAFA5761BEE9B0000CC408B /* FoodItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		FAAFA5791BEE9B0F00CC408B /* ClothingItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothingItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		FAAFA57A1BEE9B0F00CC408B /* ClothingItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClothingItemCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,9 +252,7 @@
 				FA3204D31BEE56D7007CE6E6 /* PetModel.swift */,
 				FAAFA5731BEE8D6500CC408B /* Parse Helper.swift */,
 				FA3204821BEE3BB6007CE6E6 /* Main.storyboard */,
-				FA3204851BEE3BB6007CE6E6 /* Assets.xcassets */,
-				FA3204871BEE3BB6007CE6E6 /* LaunchScreen.storyboard */,
-				FA32048A1BEE3BB6007CE6E6 /* Info.plist */,
+				FAAFA57D1BEEA7ED00CC408B /* Resources */,
 				FA3204D21BEE4286007CE6E6 /* Frameworks */,
 			);
 			path = Demestify;
@@ -305,7 +307,6 @@
 			isa = PBXGroup;
 			children = (
 				FA3204D51BEE624D007CE6E6 /* CaregiversModuleViewController.swift */,
-				FA3204D61BEE624D007CE6E6 /* CaregiversModuleViewController.xib */,
 			);
 			name = "Caregiver's Module";
 			sourceTree = "<group>";
@@ -314,8 +315,11 @@
 			isa = PBXGroup;
 			children = (
 				FA3204DA1BEE6EFC007CE6E6 /* StoreViewController.swift */,
-				FA3204DB1BEE6EFC007CE6E6 /* StoreViewController.xib */,
-				FA3204DE1BEE767F007CE6E6 /* Store Constants.swift */,
+				FAAFA5751BEE9B0000CC408B /* FoodItemCollectionViewCell.swift */,
+				FAAFA5761BEE9B0000CC408B /* FoodItemCollectionViewCell.xib */,
+				FAAFA5791BEE9B0F00CC408B /* ClothingItemCollectionViewCell.swift */,
+				FAAFA57A1BEE9B0F00CC408B /* ClothingItemCollectionViewCell.xib */,
+				FA3204DE1BEE767F007CE6E6 /* Store Model.swift */,
 			);
 			name = "Store VC";
 			sourceTree = "<group>";
@@ -351,6 +355,16 @@
 				FA7BE5391BEE88F6005C314B /* UIViewController+TargetViewController.m */,
 			);
 			name = MZFormSheet;
+			sourceTree = "<group>";
+		};
+		FAAFA57D1BEEA7ED00CC408B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA3204851BEE3BB6007CE6E6 /* Assets.xcassets */,
+				FA32048A1BEE3BB6007CE6E6 /* Info.plist */,
+				FA3204871BEE3BB6007CE6E6 /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -463,9 +477,9 @@
 				FA3205581BEE8148007CE6E6 /* Podfile in Resources */,
 				FA3204891BEE3BB6007CE6E6 /* LaunchScreen.storyboard in Resources */,
 				FA3204861BEE3BB6007CE6E6 /* Assets.xcassets in Resources */,
+				FAAFA57C1BEE9B0F00CC408B /* ClothingItemCollectionViewCell.xib in Resources */,
+				FAAFA5781BEE9B0000CC408B /* FoodItemCollectionViewCell.xib in Resources */,
 				FA3204841BEE3BB6007CE6E6 /* Main.storyboard in Resources */,
-				FA3204DD1BEE6EFC007CE6E6 /* StoreViewController.xib in Resources */,
-				FA3204D81BEE624D007CE6E6 /* CaregiversModuleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,6 +557,7 @@
 				FA7BE53E1BEE88F6005C314B /* MZFormSheetPresentationViewController.m in Sources */,
 				FA3204D71BEE624D007CE6E6 /* CaregiversModuleViewController.swift in Sources */,
 				FA7BE53B1BEE88F6005C314B /* MZFormSheetContentSizingNavigationController.m in Sources */,
+				FAAFA57B1BEE9B0F00CC408B /* ClothingItemCollectionViewCell.swift in Sources */,
 				FA7BE5441BEE88F6005C314B /* UIViewController+TargetViewController.m in Sources */,
 				FA7BE53C1BEE88F6005C314B /* MZFormSheetContentSizingNavigationControllerAnimator.m in Sources */,
 				FA7BE53A1BEE88F6005C314B /* MZBlurEffectAdapter.m in Sources */,
@@ -552,8 +567,9 @@
 				FA7BE5401BEE88F6005C314B /* MZFormSheetPresentationViewControllerInteractiveAnimator.m in Sources */,
 				FA7BE53D1BEE88F6005C314B /* MZFormSheetPresentationController.m in Sources */,
 				FA7BE5431BEE88F6005C314B /* MZTransition.m in Sources */,
+				FAAFA5771BEE9B0000CC408B /* FoodItemCollectionViewCell.swift in Sources */,
 				FA3204AF1BEE40A9007CE6E6 /* Constants.swift in Sources */,
-				FA3204DF1BEE767F007CE6E6 /* Store Constants.swift in Sources */,
+				FA3204DF1BEE767F007CE6E6 /* Store Model.swift in Sources */,
 				FA3204D41BEE56D7007CE6E6 /* PetModel.swift in Sources */,
 				FA7BE5411BEE88F6005C314B /* MZFormSheetPresentationViewControllerSegue.m in Sources */,
 				FA7BE5421BEE88F6005C314B /* MZMethodSwizzler.m in Sources */,

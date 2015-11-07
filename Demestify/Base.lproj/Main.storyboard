@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -22,27 +23,31 @@
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1044"/>
                                 <animations/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1o-Ds-xEN">
-                                <rect key="frame" x="20" y="28" width="36" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Shop"/>
-                                <connections>
-                                    <action selector="shopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="55t-Va-llA"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bap-Jp-9On">
-                                <rect key="frame" x="517" y="28" width="231" height="65"/>
+                                <rect key="frame" x="517" y="28" width="230.5" height="54"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Bap-Jp-9On" secondAttribute="height" multiplier="414:97" id="4oq-Lc-JF8"/>
+                                    <constraint firstAttribute="height" constant="54" id="AwJ-i6-xBQ"/>
+                                </constraints>
                                 <state key="normal" image="healthBar"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6m-QO-SCq">
-                                <rect key="frame" x="513" y="101" width="235" height="65"/>
+                                <rect key="frame" x="513" y="90" width="235" height="65"/>
                                 <animations/>
-                                <state key="normal" image="moneyBar"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="I6m-QO-SCq" secondAttribute="height" multiplier="47:13" id="37C-Ga-XlG"/>
+                                    <constraint firstAttribute="height" constant="65" id="aIB-kJ-9py"/>
+                                </constraints>
+                                <state key="normal" image="coins"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4B-Hw-BfH">
-                                <rect key="frame" x="281" y="270" width="207" height="65"/>
+                                <rect key="frame" x="227" y="270" width="314" height="100"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="O4B-Hw-BfH" secondAttribute="height" multiplier="1189:379" id="XBi-mt-tEb"/>
+                                    <constraint firstAttribute="height" constant="100" id="mGR-W3-LVX"/>
+                                </constraints>
                                 <state key="normal" image="playButton"/>
                                 <connections>
                                     <action selector="playButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rxi-dd-jR3"/>
@@ -57,7 +62,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I31-dz-gvh">
-                                <rect key="frame" x="590" y="128" width="100" height="20"/>
+                                <rect key="frame" x="590" y="117" width="100" height="20"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="GH3-8C-hxa"/>
@@ -68,9 +73,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="healthBar-inside" translatesAutoresizingMaskIntoConstraints="NO" id="9T3-RI-HTi">
-                                <rect key="frame" x="584" y="28" width="154" height="65"/>
+                                <rect key="frame" x="584" y="28" width="154" height="54"/>
                                 <animations/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1o-Ds-xEN">
+                                <rect key="frame" x="20" y="28" width="47.5" height="50"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Z1o-Ds-xEN" secondAttribute="height" multiplier="270:283" id="lTK-1C-sHD"/>
+                                    <constraint firstAttribute="height" constant="50" id="u1K-px-eFv"/>
+                                </constraints>
+                                <state key="normal" image="Store-button"/>
+                                <connections>
+                                    <action selector="shopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="55t-Va-llA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -113,58 +130,90 @@
                         <outlet property="moneyLabel" destination="I31-dz-gvh" id="Z7u-Lq-fcc"/>
                         <outlet property="playButton" destination="O4B-Hw-BfH" id="BiV-IY-ZaP"/>
                         <outlet property="shopButton" destination="Z1o-Ds-xEN" id="jXe-Tk-qGX"/>
+                        <segue destination="MhD-wC-UNz" kind="presentation" identifier="presentStoreFormSegue" modalPresentationStyle="formSheet" id="WL0-TT-IUj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="354" y="372"/>
         </scene>
-        <!--View Controller-->
+        <!--Store View Controller-->
         <scene sceneID="Xh4-0X-hbK">
             <objects>
-                <viewController id="MhD-wC-UNz" sceneMemberID="viewController">
+                <viewController id="MhD-wC-UNz" customClass="StoreViewController" customModule="Demestify" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="poU-PP-wfP"/>
                         <viewControllerLayoutGuide type="bottom" id="eqp-xO-eVK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gyv-Dy-VyH">
-                        <rect key="frame" x="0.0" y="0.0" width="400" height="524"/>
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="store-modal" translatesAutoresizingMaskIntoConstraints="NO" id="Z1k-ci-v02">
+                                <rect key="frame" x="0.0" y="0.0" width="500" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vNh-6y-8xH">
+                                <rect key="frame" x="40" y="158" width="420" height="400"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="YlI-Z0-82V"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="R6T-wD-oAb">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FvY-5B-74f">
+                                <rect key="frame" x="134" y="94" width="232" height="29"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="232" id="JZY-15-H2b"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Food"/>
+                                    <segment title="Clothing"/>
+                                </segments>
+                                <connections>
+                                    <action selector="categorySegmentedControllerChanged:" destination="MhD-wC-UNz" eventType="valueChanged" id="K8g-dE-reb"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FvY-5B-74f" firstAttribute="centerX" secondItem="vNh-6y-8xH" secondAttribute="centerX" id="6rG-4F-n0o"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vNh-6y-8xH" secondAttribute="trailing" constant="20" id="Ai9-jO-fao"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="vNh-6y-8xH" secondAttribute="leading" constant="-20" id="Deu-ao-RXq"/>
+                            <constraint firstItem="Z1k-ci-v02" firstAttribute="leading" secondItem="gyv-Dy-VyH" secondAttribute="leadingMargin" constant="-20" id="F4Q-yU-yeM"/>
+                            <constraint firstItem="eqp-xO-eVK" firstAttribute="top" secondItem="vNh-6y-8xH" secondAttribute="bottom" constant="42" id="MqW-DB-oLJ"/>
+                            <constraint firstItem="Z1k-ci-v02" firstAttribute="top" secondItem="poU-PP-wfP" secondAttribute="bottom" id="Vns-ia-jPt"/>
+                            <constraint firstItem="FvY-5B-74f" firstAttribute="top" secondItem="poU-PP-wfP" secondAttribute="bottom" constant="94" id="jHC-ta-Y6E"/>
+                            <constraint firstItem="eqp-xO-eVK" firstAttribute="top" secondItem="Z1k-ci-v02" secondAttribute="bottom" id="nXY-gB-By6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z1k-ci-v02" secondAttribute="trailing" constant="-20" id="sER-Db-TZK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dQ9-HQ-4i7"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="400" height="524"/>
+                    <size key="freeformSize" width="500" height="600"/>
+                    <connections>
+                        <outlet property="categorySegmentedControl" destination="FvY-5B-74f" id="OTG-XS-6r4"/>
+                        <outlet property="collectionView" destination="vNh-6y-8xH" id="V4q-Jd-1eZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wdc-c6-zQU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1928" y="372"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="cCZ-M4-HgG">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wfe-7A-lru" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yZz-Bo-jKa">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="MhD-wC-UNz" kind="relationship" relationship="rootViewController" id="GcA-jc-6JW"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ulN-Yp-6fd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1116" y="372"/>
+            <point key="canvasLocation" x="1142" y="92"/>
         </scene>
     </scenes>
     <resources>
-        <image name="healthBar" width="231" height="65"/>
+        <image name="Store-button" width="270" height="283"/>
+        <image name="coins" width="2520" height="690"/>
+        <image name="healthBar" width="828" height="194"/>
         <image name="healthBar-inside" width="231" height="65"/>
-        <image name="moneyBar" width="235" height="65"/>
-        <image name="playButton" width="207" height="65"/>
+        <image name="playButton" width="1189" height="379"/>
+        <image name="store-modal" width="1931" height="2540"/>
     </resources>
 </document>

@@ -60,7 +60,8 @@ class ViewController: UIViewController {
     
     //MARK: Buttons
     @IBAction func shopButtonTapped(sender: AnyObject) {
-        
+        self.performSegueWithIdentifier("presentStoreFormSegue", sender: nil)
+
         
     }
     
@@ -70,13 +71,17 @@ class ViewController: UIViewController {
     }
 
     @IBAction func caregiversModuleButtonTapped(sender: AnyObject) {
-        /*
-        let navigationController = self.storyboard!.instantiateViewControllerWithIdentifier("storeNavController") as! UINavigationController
-        let formSheetController = MZFormSheetPresentation(contentViewController: navigationController)
-        formSheetController.contentViewSize = CGSizeMake(300, 393)
-        self.presentViewController(formSheetController, animated: true, completion: nil)
-        */
+        
+        //let navigationController = self.storyboard!.instantiateViewControllerWithIdentifier("storeNavController") as! UINavigationController
+        //self.presentViewController(navigationController, animated: true, completion: nil)
+        
+        //let formSheetController = MZFormSheetPresentationController(contentViewController: navigationController)
+        //formSheetController.contentViewSize = CGSizeMake(300, 393)
+        //self.presentViewController(formSheetController, animated: true, completion: nil)
+        
     }
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+    }
 }
 

@@ -7,5 +7,15 @@
 //
 
 import UIKit
+import Parse
 
+func saveAnagramPlayData(time:NSTimeInterval, isCorrect:Bool, numberOfHints:Int) {
+    //TODO: - Save data
+    
+    
+}
+
+//Time
+//isCorrect
+//Hints
 

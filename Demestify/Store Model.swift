@@ -23,7 +23,6 @@ struct Food {
             break
         }
     }
-    
 }
 
 struct Clothing {

@@ -23,8 +23,10 @@ class PetModel: NSObject {
         if petHealth == 0.0 {
             petHealth = 0.9
         }
-        
-        purchasedClothing = NSUserDefaults.standardUserDefaults().objectForKey("purchasedClothing") as! [Int]
+        /*
+        if let foundPurchasedClothing = NSUserDefaults.standardUserDefaults().objectForKey("purchasedClothing") {
+            purchasedClothing = foundPurchasedClothing
+        }*/
     }
     
     func saveData() {
