@@ -181,14 +181,25 @@
                                     <action selector="categorySegmentedControllerChanged:" destination="MhD-wC-UNz" eventType="valueChanged" id="K8g-dE-reb"/>
                                 </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ER-O9-d2f">
+                                <rect key="frame" x="460" y="28" width="40" height="40"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5PB-1l-WgK"/>
+                                    <constraint firstAttribute="width" secondItem="2ER-O9-d2f" secondAttribute="height" multiplier="1:1" id="v5T-QI-EM5"/>
+                                </constraints>
+                                <state key="normal" image="x-icon"/>
+                            </button>
                         </subviews>
                         <animations/>
                         <constraints>
+                            <constraint firstItem="2ER-O9-d2f" firstAttribute="leading" secondItem="Z1k-ci-v02" secondAttribute="trailing" constant="-40" id="4uc-XN-H8V"/>
                             <constraint firstItem="FvY-5B-74f" firstAttribute="centerX" secondItem="vNh-6y-8xH" secondAttribute="centerX" id="6rG-4F-n0o"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vNh-6y-8xH" secondAttribute="trailing" constant="20" id="Ai9-jO-fao"/>
                             <constraint firstAttribute="leadingMargin" secondItem="vNh-6y-8xH" secondAttribute="leading" constant="-20" id="Deu-ao-RXq"/>
                             <constraint firstItem="Z1k-ci-v02" firstAttribute="leading" secondItem="gyv-Dy-VyH" secondAttribute="leadingMargin" constant="-20" id="F4Q-yU-yeM"/>
                             <constraint firstItem="eqp-xO-eVK" firstAttribute="top" secondItem="vNh-6y-8xH" secondAttribute="bottom" constant="42" id="MqW-DB-oLJ"/>
+                            <constraint firstItem="Z1k-ci-v02" firstAttribute="top" secondItem="2ER-O9-d2f" secondAttribute="bottom" constant="-68" id="SiS-Xp-eh5"/>
                             <constraint firstItem="Z1k-ci-v02" firstAttribute="top" secondItem="poU-PP-wfP" secondAttribute="bottom" id="Vns-ia-jPt"/>
                             <constraint firstItem="FvY-5B-74f" firstAttribute="top" secondItem="poU-PP-wfP" secondAttribute="bottom" constant="94" id="jHC-ta-Y6E"/>
                             <constraint firstItem="eqp-xO-eVK" firstAttribute="top" secondItem="Z1k-ci-v02" secondAttribute="bottom" id="nXY-gB-By6"/>
@@ -215,5 +226,6 @@
         <image name="healthBar-inside" width="231" height="65"/>
         <image name="playButton" width="1189" height="379"/>
         <image name="store-modal" width="1931" height="2540"/>
+        <image name="x-icon" width="227" height="230"/>
     </resources>
 </document>
