@@ -10,14 +10,16 @@ import UIKit
 //TODO: Add the rest of the food and clothing enums
 
 struct Food {
+    var name:String!
     var cost:Int!
-    var health:CGFloat!
+    var health:Int!
     
     init(foodType:FoodTypes) {
         switch foodType {
         case .Sushi:
-            cost = 20
-            health = 0.2
+            name = "Sushi"
+            cost = 2000
+            health = 40
             
         default:
             break
@@ -26,12 +28,14 @@ struct Food {
 }
 
 struct Clothing {
+    var name:String!
     var cost:Int!
     var bodyPosition:BodyPosition!
     
     init(clothingType:ClothingTypes) {
         switch clothingType {
         case .Scarf:
+            name = "Scarf"
             cost = 20
             bodyPosition = .Head
             
@@ -47,9 +51,9 @@ enum FoodTypes:Int {
 }
 
 enum ClothingTypes {
-    case Scarf, HairTie, Fedora, EarMuffs, Toque, Shirt, Skirt, Blouse, Dress, Cape, TankTop
+    case Scarf, HairTie, Fedora, EarMuffs, Toque, Shirt, Skirt, Blouse, Dress, Cape, Diaper
 }
 
 enum BodyPosition {
-    case Head, Torso
+    case Head, Torso, Legs
 }

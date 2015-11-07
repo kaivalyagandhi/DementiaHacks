@@ -10,15 +10,19 @@ import UIKit
 
 class ClothingItemCollectionViewCell: UICollectionViewCell {
 
-    var clothingItem:Clothing?
+    var clothingItem:Clothing!
     
-    
+    @IBOutlet weak var clothingImageView: UIImageView!
+    @IBOutlet weak var costLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     
-    
+    func configureViews() {
+        costLabel.text = clothingItem.cost.description
+        clothingImageView.image = UIImage(named: clothingItem.name + "image")
+    }
 
 }

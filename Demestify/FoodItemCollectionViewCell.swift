@@ -19,14 +19,16 @@ class FoodItemCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var costLabel: UILabel!
     @IBOutlet weak var healthLabel: UILabel!
     
-    var foodItem:Food?
+    var foodItem:Food!
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
     func configureCell() {
-        
+        costLabel.text = foodItem.cost.description
+        healthLabel.text = foodItem.health.description
+        foodImageView.image = UIImage(named: foodItem.name + "image")
     }
     
     

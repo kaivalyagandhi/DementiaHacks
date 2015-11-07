@@ -42,6 +42,10 @@
                 <constraint firstItem="PwT-Ad-a0m" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="zIz-lX-C3X"/>
             </constraints>
             <size key="customSize" width="120" height="150"/>
+            <connections>
+                <outlet property="clothingImageView" destination="PwT-Ad-a0m" id="s5W-gv-tSB"/>
+                <outlet property="costLabel" destination="E1y-R1-VK5" id="UKE-Ad-gn8"/>
+            </connections>
             <point key="canvasLocation" x="353" y="383"/>
         </collectionViewCell>
     </objects>
