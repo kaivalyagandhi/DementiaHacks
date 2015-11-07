@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+//TODO: Add the rest of the food and clothing enums
 
 struct Food {
     var cost:Int!

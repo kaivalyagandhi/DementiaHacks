@@ -37,4 +37,6 @@ class PetModel: NSObject {
 
         NSUserDefaults.standardUserDefaults().setObject(purchasedClothing, forKey: "purcahsedClothing")
     }
+    
+    //TODO: Add new Clothing
 }
