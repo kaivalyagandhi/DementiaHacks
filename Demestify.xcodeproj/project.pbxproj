@@ -244,14 +244,13 @@
 		FA32047D1BEE3BB6007CE6E6 /* Demestify */ = {
 			isa = PBXGroup;
 			children = (
-				FA32047E1BEE3BB6007CE6E6 /* AppDelegate.swift */,
 				FA3204801BEE3BB6007CE6E6 /* ViewController.swift */,
-				FA3204AE1BEE40A9007CE6E6 /* Constants.swift */,
 				FA3204D91BEE62AA007CE6E6 /* Caregiver's Module */,
 				FA3204E01BEE7916007CE6E6 /* Store VC */,
 				FA3204D31BEE56D7007CE6E6 /* PetModel.swift */,
 				FAAFA5731BEE8D6500CC408B /* Parse Helper.swift */,
 				FA3204821BEE3BB6007CE6E6 /* Main.storyboard */,
+				FA3204AE1BEE40A9007CE6E6 /* Constants.swift */,
 				FAAFA57D1BEEA7ED00CC408B /* Resources */,
 				FA3204D21BEE4286007CE6E6 /* Frameworks */,
 			);
@@ -360,6 +359,7 @@
 		FAAFA57D1BEEA7ED00CC408B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FA32047E1BEE3BB6007CE6E6 /* AppDelegate.swift */,
 				FA3204851BEE3BB6007CE6E6 /* Assets.xcassets */,
 				FA32048A1BEE3BB6007CE6E6 /* Info.plist */,
 				FA3204871BEE3BB6007CE6E6 /* LaunchScreen.storyboard */,

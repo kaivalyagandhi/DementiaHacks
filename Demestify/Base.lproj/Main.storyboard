@@ -131,6 +131,7 @@
                         <outlet property="playButton" destination="O4B-Hw-BfH" id="BiV-IY-ZaP"/>
                         <outlet property="shopButton" destination="Z1o-Ds-xEN" id="jXe-Tk-qGX"/>
                         <segue destination="MhD-wC-UNz" kind="presentation" identifier="presentStoreFormSegue" modalPresentationStyle="formSheet" id="WL0-TT-IUj"/>
+                        <segue destination="qgD-hD-fOU" kind="presentation" id="xOx-zU-3eX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -217,6 +218,77 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wdc-c6-zQU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1142" y="92"/>
+        </scene>
+        <!--Caregivers Module View Controller-->
+        <scene sceneID="hml-C7-LN4">
+            <objects>
+                <viewController id="0eA-gb-uuY" customClass="CaregiversModuleViewController" customModule="Demestify" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="54n-jB-iKt"/>
+                        <viewControllerLayoutGuide type="bottom" id="r45-tY-OOV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SpE-a2-EJ0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBm-vt-rZj">
+                                <rect key="frame" x="264" y="90" width="72" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Add Photo"/>
+                                <connections>
+                                    <action selector="addPhotoButtonTapped:" destination="0eA-gb-uuY" eventType="touchUpInside" id="cu2-mO-g3w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GvM-91-VSk">
+                                <rect key="frame" x="530" y="72" width="50" height="50"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GvM-91-VSk" secondAttribute="height" id="C6m-Fu-NZi"/>
+                                    <constraint firstAttribute="height" constant="50" id="NNU-3c-5pT"/>
+                                </constraints>
+                                <state key="normal" image="x-icon"/>
+                                <connections>
+                                    <action selector="closeButtonTapped:" destination="0eA-gb-uuY" eventType="touchUpInside" id="bvt-2a-2v1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OBm-vt-rZj" firstAttribute="top" secondItem="54n-jB-iKt" secondAttribute="bottom" constant="26" id="0c4-vH-dRV"/>
+                            <constraint firstItem="GvM-91-VSk" firstAttribute="top" secondItem="54n-jB-iKt" secondAttribute="bottom" constant="8" id="HQJ-Jx-W9A"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GvM-91-VSk" secondAttribute="trailing" id="dBq-te-NNQ"/>
+                            <constraint firstItem="OBm-vt-rZj" firstAttribute="centerX" secondItem="SpE-a2-EJ0" secondAttribute="centerX" id="mu1-PH-ib1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="K80-a3-Dut"/>
+                    <connections>
+                        <outlet property="addPhotoButton" destination="OBm-vt-rZj" id="gm2-Yb-59a"/>
+                        <outlet property="closeButton" destination="GvM-91-VSk" id="Vp2-E9-aka"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eZJ-cx-mmd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1965" y="799"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hRR-ya-UgV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qgD-hD-fOU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aA1-A6-dMz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0eA-gb-uuY" kind="relationship" relationship="rootViewController" id="Btp-5f-C2R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gJX-JS-2j2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1153" y="799"/>
         </scene>
     </scenes>
     <resources>

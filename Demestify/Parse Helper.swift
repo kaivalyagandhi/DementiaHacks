@@ -10,12 +10,30 @@ import UIKit
 import Parse
 
 func saveAnagramPlayData(time:NSTimeInterval, isCorrect:Bool, numberOfHints:Int) {
-    //TODO: - Save data
-    
-    
+    let newData = PFObject(className: PF_ANAGRAM_CLASSNAME)
+    newData[PF_ANAGRAM_COMPLETED] = isCorrect
+    newData[PF_ANAGRAM_HINTS] = numberOfHints
+    newData[PF_ANAGRAM_TIME] = Float(time)
+    if PFUser.currentUser() != nil {
+        newData[PF_ANAGRAM_FROMUSER] = PFUser.currentUser()!
+    }
+    newData.saveInBackgroundWithBlock { (success, error) -> Void in
+        if error == nil && success == true {
+            print("Saved anagram data")
+        }
+    }
 }
 
-//Time
-//isCorrect
-//Hints
-
+func saveJigsawPlayData(time:NSTimeInterval, isCorrect:Bool) {
+    let newData = PFObject(className: PF_ANAGRAM_CLASSNAME)
+    newData[PF_ANAGRAM_COMPLETED] = isCorrect
+    newData[PF_ANAGRAM_TIME] = Float(time)
+    if PFUser.currentUser() != nil {
+        newData[PF_ANAGRAM_FROMUSER] = PFUser.currentUser()!
+    }
+    newData.saveInBackgroundWithBlock { (success, error) -> Void in
+        if error == nil && success == true {
+            print("Saved jigsaw data")
+        }
+    }
+}
