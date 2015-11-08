@@ -57,21 +57,21 @@ class GameController {
   
   func dealRandomAnagram () {
     //1
-    assert(level.anagrams.count > 0, "no level loaded")
+    assert(appDelegate.anagramManager.anagrams.count > 0, "no level loaded")
     
     //2
-    let randomIndex = randomNumber(minX:0, maxX:UInt32(level.anagrams.count-1))
+    let randomIndex = randomNumber(minX:0, maxX:UInt32(appDelegate.anagramManager.anagrams.count-1))
     let anagramPair = appDelegate.anagramManager.anagrams[randomIndex]
     
     //3
-    let anagram1 = anagramPair.answer
-    let anagram2 = randomStringWithLength(anagram1!)
+    let anagram2 = anagramPair.answer
+    let anagram1 = randomStringWithLength(anagram2!)
     let anagram3 = anagramPair.question
     
     //4
    
-    let anagram1length = anagram1!.characters.count
-    let anagram2length = anagram2.characters.count
+    let anagram1length = anagram1.characters.count
+    let anagram2length = anagram2!.characters.count
     let anagram3length = anagram3!.characters.count
     
     //5
@@ -91,7 +91,7 @@ class GameController {
     targets = []
     
     //create targets
-    for (index, letter) in anagram2.characters.enumerate() {
+    for (index, letter) in anagram2!.characters.enumerate() {
       if letter != " " {
         let target = TargetView(letter: letter, sideLength: tileSide)
         target.center = CGPointMake(xOffset + CGFloat(index)*(tileSide + TileMargin), ScreenHeight/4)
@@ -105,7 +105,7 @@ class GameController {
     tiles = []
     
     //2 create tiles
-    for (index, letter) in anagram1!.characters.enumerate() {
+    for (index, letter) in anagram1.characters.enumerate() {
       //3
       if letter != " " {
         let tile = TileView(letter: letter, sideLength: tileSide)

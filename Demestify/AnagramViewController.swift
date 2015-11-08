@@ -49,11 +49,6 @@ class AnagramViewController: UIViewController, HUDViewDelegate {
     self.showLevelMenu()
   }
 
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-
   override func prefersStatusBarHidden() -> Bool {
     return true
   }
