@@ -48,7 +48,7 @@ class ViewController: UIViewController {
     
     func animateHealthBar() {
         UIView.animateWithDuration(0.5, animations: { () -> Void in
-            self.hbImageView.frame = CGRect(x: self.healthBarImageView.frame.origin.x, y: self.healthBarImageView.frame.origin.y, width: CGFloat(self.appDelegate.pet.petHealth!) * self.healthBarImageView.frame.width, height: self.healthBarImageView.frame.height)
+            self.hbImageView.frame = CGRect(x: self.healthBarImageView.frame.origin.x, y: self.healthBarImageView.frame.origin.y, width: CGFloat(self.appDelegate.pet.petHealth!) * self.healthBarImageView.frame.width/100, height: self.healthBarImageView.frame.height)
             }) { (finished) -> Void in
                 print("Animation finished")
         }
@@ -61,27 +61,14 @@ class ViewController: UIViewController {
     //MARK: Buttons
     @IBAction func shopButtonTapped(sender: AnyObject) {
         self.performSegueWithIdentifier("presentStoreFormSegue", sender: nil)
-
-        
     }
     
     @IBAction func playButtonTapped(sender: AnyObject) {
         
-        
     }
 
     @IBAction func caregiversModuleButtonTapped(sender: AnyObject) {
-        
-        //let navigationController = self.storyboard!.instantiateViewControllerWithIdentifier("storeNavController") as! UINavigationController
-        //self.presentViewController(navigationController, animated: true, completion: nil)
-        
-        //let formSheetController = MZFormSheetPresentationController(contentViewController: navigationController)
-        //formSheetController.contentViewSize = CGSizeMake(300, 393)
-        //self.presentViewController(formSheetController, animated: true, completion: nil)
-        
-    }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
+        performSegueWithIdentifier("presentCaregiverSegue", sender: nil)
     }
 }
 

@@ -57,6 +57,8 @@
 		FAAFA5781BEE9B0000CC408B /* FoodItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAFA5761BEE9B0000CC408B /* FoodItemCollectionViewCell.xib */; };
 		FAAFA57B1BEE9B0F00CC408B /* ClothingItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFA5791BEE9B0F00CC408B /* ClothingItemCollectionViewCell.swift */; };
 		FAAFA57C1BEE9B0F00CC408B /* ClothingItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAFA57A1BEE9B0F00CC408B /* ClothingItemCollectionViewCell.xib */; };
+		FAAFA57F1BEECA2400CC408B /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFA57E1BEECA2400CC408B /* ImageModel.swift */; };
+		FAAFA5811BEECD7200CC408B /* AnagramModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFA5801BEECD7200CC408B /* AnagramModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +153,8 @@
 		FAAFA5761BEE9B0000CC408B /* FoodItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		FAAFA5791BEE9B0F00CC408B /* ClothingItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothingItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		FAAFA57A1BEE9B0F00CC408B /* ClothingItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClothingItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		FAAFA57E1BEECA2400CC408B /* ImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		FAAFA5801BEECD7200CC408B /* AnagramModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnagramModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +252,8 @@
 				FA3204D91BEE62AA007CE6E6 /* Caregiver's Module */,
 				FA3204E01BEE7916007CE6E6 /* Store VC */,
 				FA3204D31BEE56D7007CE6E6 /* PetModel.swift */,
+				FAAFA57E1BEECA2400CC408B /* ImageModel.swift */,
+				FAAFA5801BEECD7200CC408B /* AnagramModel.swift */,
 				FAAFA5731BEE8D6500CC408B /* Parse Helper.swift */,
 				FA3204821BEE3BB6007CE6E6 /* Main.storyboard */,
 				FA3204AE1BEE40A9007CE6E6 /* Constants.swift */,
@@ -563,8 +569,10 @@
 				FA7BE53A1BEE88F6005C314B /* MZBlurEffectAdapter.m in Sources */,
 				FA3204DC1BEE6EFC007CE6E6 /* StoreViewController.swift in Sources */,
 				FA7BE53F1BEE88F6005C314B /* MZFormSheetPresentationViewControllerAnimator.m in Sources */,
+				FAAFA57F1BEECA2400CC408B /* ImageModel.swift in Sources */,
 				FA32047F1BEE3BB6007CE6E6 /* AppDelegate.swift in Sources */,
 				FA7BE5401BEE88F6005C314B /* MZFormSheetPresentationViewControllerInteractiveAnimator.m in Sources */,
+				FAAFA5811BEECD7200CC408B /* AnagramModel.swift in Sources */,
 				FA7BE53D1BEE88F6005C314B /* MZFormSheetPresentationController.m in Sources */,
 				FA7BE5431BEE88F6005C314B /* MZTransition.m in Sources */,
 				FAAFA5771BEE9B0000CC408B /* FoodItemCollectionViewCell.swift in Sources */,

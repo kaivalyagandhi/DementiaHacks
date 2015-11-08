@@ -11,7 +11,7 @@ import UIKit
 class PetModel: NSObject {
 
     var petMoney:Int?
-    var petHealth:Float?
+    var petHealth:Int?
     var purchasedClothing:[Int] = []
     
     override init() {
@@ -19,9 +19,9 @@ class PetModel: NSObject {
         if petMoney == 0 {
             petMoney = 1000
         }
-        petHealth = NSUserDefaults.standardUserDefaults().floatForKey("petHealth")
-        if petHealth == 0.0 {
-            petHealth = 0.9
+        petHealth = NSUserDefaults.standardUserDefaults().integerForKey("petHealth")
+        if petHealth == 0 {
+            petHealth = 90
         }
         /*
         if let foundPurchasedClothing = NSUserDefaults.standardUserDefaults().objectForKey("purchasedClothing") {
@@ -34,10 +34,20 @@ class PetModel: NSObject {
         NSUserDefaults.standardUserDefaults().setInteger(petMoney!, forKey: "petMoney")
         }
         if petHealth != nil {
-        NSUserDefaults.standardUserDefaults().setFloat(petHealth!, forKey: "petHealth")
+        NSUserDefaults.standardUserDefaults().setInteger(petHealth!, forKey: "petHealth")
         }
 
         NSUserDefaults.standardUserDefaults().setObject(purchasedClothing, forKey: "purcahsedClothing")
+    }
+    
+    func incrementMoney(byAmount:Int) {
+        petMoney! += byAmount
+    }
+    
+    func incrementHealth(byAmount:Int) {
+        
+        //TODO: - Check for death
+        petHealth! += byAmount
     }
     
     //TODO: Add new Clothing

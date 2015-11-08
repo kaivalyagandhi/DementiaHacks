@@ -131,7 +131,7 @@
                         <outlet property="playButton" destination="O4B-Hw-BfH" id="BiV-IY-ZaP"/>
                         <outlet property="shopButton" destination="Z1o-Ds-xEN" id="jXe-Tk-qGX"/>
                         <segue destination="MhD-wC-UNz" kind="presentation" identifier="presentStoreFormSegue" modalPresentationStyle="formSheet" id="WL0-TT-IUj"/>
-                        <segue destination="qgD-hD-fOU" kind="presentation" id="xOx-zU-3eX"/>
+                        <segue destination="qgD-hD-fOU" kind="presentation" identifier="presentCaregiverSegue" id="xOx-zU-3eX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -190,6 +190,9 @@
                                     <constraint firstAttribute="width" secondItem="2ER-O9-d2f" secondAttribute="height" multiplier="1:1" id="v5T-QI-EM5"/>
                                 </constraints>
                                 <state key="normal" image="x-icon"/>
+                                <connections>
+                                    <action selector="closeItemTapped:" destination="MhD-wC-UNz" eventType="touchUpInside" id="aDK-jj-82e"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>

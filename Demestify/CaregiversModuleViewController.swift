@@ -11,6 +11,8 @@ import Parse
 
 class CaregiversModuleViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    
     @IBOutlet weak var addPhotoButton: UIButton!
     @IBOutlet weak var closeButton: UIButton!
     
@@ -18,9 +20,9 @@ class CaregiversModuleViewController: UIViewController, UINavigationControllerDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let imagePicker = UIImagePickerController()
+        imagePicker = UIImagePickerController()
         imagePicker.delegate = self
-        
+        imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
         // Do any additional setup after loading the view.
     }
     
@@ -29,19 +31,43 @@ class CaregiversModuleViewController: UIViewController, UINavigationControllerDe
     }
     
     @IBAction func addPhotoButtonTapped(sender: AnyObject) {
-        
+        self.presentViewController(imagePicker, animated: true, completion: nil)
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             
-            //TODO: - Crop image
+            //Crop image
+            var posX:CGFloat
+            var posY:CGFloat
+            var cgwidth:CGFloat
+            var cgheight:CGFloat
             
+            let contextImage: UIImage = UIImage(CGImage: pickedImage.CGImage!)
+            let contextSize: CGSize = contextImage.size
+            if contextSize.width > contextSize.height {
+                posX = ((contextSize.width - contextSize.height) / 2)
+                posY = 0
+                cgwidth = contextSize.height
+                cgheight = contextSize.height
+            } else {
+                posX = 0
+                posY = ((contextSize.height - contextSize.width) / 2)
+                cgwidth = contextSize.width
+                cgheight = contextSize.width
+            }
             
+            let rect: CGRect = CGRectMake(posX, posY, cgwidth, cgheight)
             
-            //TODO: - Save image to array
+            let imageRef: CGImageRef = CGImageCreateWithImageInRect(contextImage.CGImage, rect)!
             
+            let pickedImage: UIImage = UIImage(CGImage: imageRef, scale: pickedImage.scale, orientation: pickedImage.imageOrientation)
+            
+            //Save image to array
+            savePhoto(pickedImage)
+
             //TODO: - Reload collectionView
+            //self.imageCollectionView.reloadData()
         }
         
         dismissViewControllerAnimated(true, completion: nil)
@@ -49,12 +75,14 @@ class CaregiversModuleViewController: UIViewController, UINavigationControllerDe
     
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         dismissViewControllerAnimated(true, completion: nil)
-        
+    }
+    
+    func savePhoto(photo:UIImage) {
+        appDelegate.imageManager.addNewImage(photo)
     }
     
     @IBAction func closeButtonTapped(sender: AnyObject) {
-        
-        dismissViewControllerAnimated(true, completion: nil)
+        self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
     }
     
     /*

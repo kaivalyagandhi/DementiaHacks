@@ -67,6 +67,9 @@ class StoreViewController: UIViewController, UICollectionViewDataSource, UIColle
     }
     
     
+    @IBAction func closeItemTapped(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     
     
     /*
