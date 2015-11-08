@@ -32,7 +32,7 @@ class GameViewController: UIViewController {
             
             
             let backbutton = UIButton(frame: CGRect(x: 20, y: 20, width: 50, height: 50))
-            backbutton.setImage(UIImage(named: "back"), forState: .Normal)
+            backbutton.setImage(UIImage(named: "back-btn"), forState: .Normal)
             backbutton.addTarget(self, action: "dismiss", forControlEvents: .TouchUpInside)
             skView.addSubview(backbutton)
         }

@@ -201,12 +201,12 @@ class ViewController: UIViewController, StoreViewControllerDelegate {
     }
     
     @IBAction func playButtonTapped(sender: AnyObject) {
-        self.performSegueWithIdentifier("presentJigsawSegue", sender: nil)
-        return
+
         if gameMode == 0 {
             self.performSegueWithIdentifier("presentAnagramSegue", sender: nil)
             gameMode = 1
         } else {
+            self.performSegueWithIdentifier("presentJigsawSegue", sender: nil)
             gameMode = 0
         }
     }
