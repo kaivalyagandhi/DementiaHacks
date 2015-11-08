@@ -48,12 +48,14 @@ class GameController {
         var a = Array(letters.characters)
         a.shuffle()
         return String(a)
-        
     }
   
   func dealRandomAnagram () {
     //1
-    assert(appDelegate.anagramManager.anagrams.count > 0, "no level loaded")
+    //assert(appDelegate.anagramManager.anagrams.count > 0, "no level loaded")
+    if appDelegate.anagramManager.anagrams.count == 0 {
+        appDelegate.anagramManager.anagrams.append(AnagramModel(answer: "thailand", question: "What was a fun vacation spot?"))
+    }
     
     //2
     let randomIndex = randomNumber(minX:0, maxX:UInt32(appDelegate.anagramManager.anagrams.count-1))

@@ -88,7 +88,7 @@ class SliddingPuzzle: SKScene {
     }
     
     func putTilesInRandomPoints(animate : Bool){
-        let randomizedPoints = points.shuffle()
+        let randomizedPoints = points.shuffle() as [CGPoint]
         for tile in tiles {
             if animate{
                 tile.wrongPostion = randomizedPoints[self.tiles.indexOf(tile)!]

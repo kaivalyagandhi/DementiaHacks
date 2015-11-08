@@ -223,7 +223,7 @@
                         <viewControllerLayoutGuide type="top" id="vi9-i1-hP8"/>
                         <viewControllerLayoutGuide type="bottom" id="u4a-Ax-al2"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Uos-eJ-ava">
+                    <view key="view" contentMode="scaleToFill" id="Uos-eJ-ava" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
@@ -622,7 +622,9 @@
                             <constraint firstItem="vAd-XR-IhH" firstAttribute="leading" secondItem="sUd-qA-oPp" secondAttribute="leadingMargin" constant="-20" id="rts-qi-HBa"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Performance" id="DP0-wo-mxv"/>
+                    <navigationItem key="navigationItem" title="Performance" id="DP0-wo-mxv">
+                        <barButtonItem key="leftBarButtonItem" title="Dismiss" id="plY-cd-Oeh"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BZB-st-Gy9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -800,7 +802,13 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Memories" id="Xvo-L9-b9l"/>
+                    <navigationItem key="navigationItem" title="Memories" id="Xvo-L9-b9l">
+                        <barButtonItem key="leftBarButtonItem" title="Dismiss" id="oyc-Fl-Awm">
+                            <connections>
+                                <action selector="dismissButtonTapped:" destination="p8R-vu-1qa" id="y3F-ea-h5y"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="answerTextField" destination="gpT-LX-kgj" id="at8-Hw-CKX"/>

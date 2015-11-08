@@ -8,11 +8,15 @@
 
 import UIKit
 import Parse
+import AVFoundation
+import AudioToolbox
 
 class ViewController: UIViewController, StoreViewControllerDelegate {
     
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-
+    var gameMode = 0
+    
+    
     @IBOutlet weak var shopButton: UIButton!
     
     @IBOutlet weak var healthBarButton: UIButton!
@@ -26,6 +30,9 @@ class ViewController: UIViewController, StoreViewControllerDelegate {
     @IBOutlet weak var headClothingImage: UIImageView!
     @IBOutlet weak var torsoClothingImage: UIImageView!
     
+    var audioPlayer:AVAudioPlayer!
+    let path = NSURL(fileURLWithPath: NSString(format: "%@/Elvis Presley - Hound Dog - Cover Version  (Instrumental).mp3", NSBundle.mainBundle().resourcePath!) as String)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViews()
@@ -36,6 +43,14 @@ class ViewController: UIViewController, StoreViewControllerDelegate {
                 self.enableAllButtons(true)
             })
         }
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOfURL: path)
+        } catch {
+            print("no audio file")
+        }
+        
+        audioPlayer.play()
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -189,7 +204,13 @@ class ViewController: UIViewController, StoreViewControllerDelegate {
     }
     
     @IBAction func playButtonTapped(sender: AnyObject) {
-        self.performSegueWithIdentifier("presentAnagramSegue", sender: nil)
+        if gameMode == 0 {
+            self.performSegueWithIdentifier("presentAnagramSegue", sender: nil)
+            gameMode = 1
+        } else {
+            self.performSegueWithIdentifier("presentJigsawSegue", sender: nil)
+            gameMode = 0
+        }
     }
 
     @IBAction func caregiversModuleButtonTapped(sender: AnyObject) {

@@ -30,7 +30,7 @@ class JigsawPuzzle: SKScene {
         let tilesInLine = 5
         piecesCount = tilesInLine * tilesInLine
         
-        let image = UIImage(named: "car")!
+        let image = UIImage(named: "4")!
         
         imageTiles = image.jigSawCuter(CGSize(width: 760, height: 698), piecesCount: piecesCount!)
         for i in 0...24{

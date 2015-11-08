@@ -34,6 +34,10 @@ class AddMemoriesViewController: UIViewController, UITextViewDelegate, UITextFie
         configureViews()
     }
     
+    @IBAction func dismissButtonTapped(sender: AnyObject) {
+        self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     func dismissKeyboard() {
         questionTextView.resignFirstResponder()
         answerTextField.resignFirstResponder()

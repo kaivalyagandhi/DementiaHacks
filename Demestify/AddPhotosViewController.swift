@@ -53,7 +53,6 @@ class AddPhotosViewController: UIViewController, UINavigationControllerDelegate,
     }
     
     @IBAction func addPhotoButtonTapped(sender: AnyObject) {
-        
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
@@ -108,7 +107,7 @@ class AddPhotosViewController: UIViewController, UINavigationControllerDelegate,
     }
     
     @IBAction func closeButtonTapped(sender: AnyObject) {
-        self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     /*
