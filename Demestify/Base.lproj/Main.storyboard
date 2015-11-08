@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z4z-h5-XnW">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Z4z-h5-XnW">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1044"/>
                                 <animations/>
                             </imageView>
@@ -56,7 +56,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Tf-bo-uhb">
                                 <rect key="frame" x="616" y="974" width="132" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Caregiver's module"/>
+                                <state key="normal" title="Caregiver's module">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="caregiversModuleButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TTT-ug-oR7"/>
                                 </connections>
@@ -296,6 +298,7 @@
     </scenes>
     <resources>
         <image name="Store-button" width="270" height="283"/>
+        <image name="bg" width="2765" height="3686"/>
         <image name="coins" width="2520" height="690"/>
         <image name="healthBar" width="828" height="194"/>
         <image name="healthBar-inside" width="231" height="65"/>

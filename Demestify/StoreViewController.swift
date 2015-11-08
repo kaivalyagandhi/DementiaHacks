@@ -71,7 +71,6 @@ class StoreViewController: UIViewController, UICollectionViewDataSource, UIColle
         dismissViewControllerAnimated(true, completion: nil)
     }
     
-    
     /*
     // MARK: - Navigation
 

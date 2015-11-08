@@ -251,9 +251,7 @@
 				FA3204801BEE3BB6007CE6E6 /* ViewController.swift */,
 				FA3204D91BEE62AA007CE6E6 /* Caregiver's Module */,
 				FA3204E01BEE7916007CE6E6 /* Store VC */,
-				FA3204D31BEE56D7007CE6E6 /* PetModel.swift */,
-				FAAFA57E1BEECA2400CC408B /* ImageModel.swift */,
-				FAAFA5801BEECD7200CC408B /* AnagramModel.swift */,
+				FAAFA5821BEED97E00CC408B /* Models */,
 				FAAFA5731BEE8D6500CC408B /* Parse Helper.swift */,
 				FA3204821BEE3BB6007CE6E6 /* Main.storyboard */,
 				FA3204AE1BEE40A9007CE6E6 /* Constants.swift */,
@@ -371,6 +369,16 @@
 				FA3204871BEE3BB6007CE6E6 /* LaunchScreen.storyboard */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		FAAFA5821BEED97E00CC408B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA3204D31BEE56D7007CE6E6 /* PetModel.swift */,
+				FAAFA57E1BEECA2400CC408B /* ImageModel.swift */,
+				FAAFA5801BEECD7200CC408B /* AnagramModel.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
