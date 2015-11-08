@@ -72,10 +72,7 @@ class StoreViewController: UIViewController, UICollectionViewDataSource, UIColle
         if categorySegmentedControl.selectedSegmentIndex == 0 && appDelegate.pet.petMoney > Food(foodType: indexPath.item).cost {
             appDelegate.pet.incrementHealth(Food(foodType: indexPath.item).health)
             appDelegate.pet.incrementMoney(-Food(foodType: indexPath.item).cost)
-<<<<<<< HEAD
-            
-=======
->>>>>>> anagram-game-branch
+
             if delegate != nil {
                 delegate?.storeViewControllerDidPurchaseFood()
             }

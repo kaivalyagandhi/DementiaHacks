@@ -76,7 +76,6 @@ class ViewController: UIViewController, StoreViewControllerDelegate {
         
         let idx = arc4random_uniform(UInt32(filteredClothing.count))
         let image = UIImage(named: filteredClothing[Int(idx)].name.lowercaseString + "_image")
-        print(filteredClothing[Int(idx)].name.lowercaseString + "-image")
         torsoClothingImage.image = image
     }
     
@@ -125,42 +124,10 @@ class ViewController: UIViewController, StoreViewControllerDelegate {
     
     func animateEating() {
         let feeling = "chew"
-<<<<<<< HEAD
         
         var animImages:[UIImage] = []
         for idx in 1..<10 {
             animImages.append(UIImage(named: "\(feeling)-\(idx.description)")!)
-        }
-        
-        petImageView.animationImages = animImages
-        petImageView.animationRepeatCount = 3
-        petImageView.animationDuration = 0.9
-        petImageView.startAnimating()
-        self.performSelector("resetPetImageView", withObject: nil, afterDelay: 0.9)
-    }
-    
-    func configurePetImageView() {
-        var feeling:String!
-        switch appDelegate.pet.petHealth! {
-        case 0..<30:
-            feeling = "supersad"
-        case 30..<60:
-            feeling = "sad"
-        case 60..<80:
-            feeling = "okay"
-        case 80..<100:
-            feeling = "happy"
-        default:
-            feeling = "okay"
-        }
-=======
->>>>>>> anagram-game-branch
-        
-        var animImages:[UIImage] = []
-        for idx in 1..<10 {
-            animImages.append(UIImage(named: "\(feeling)-\(idx.description)")!)
-<<<<<<< HEAD
-=======
         }
         
         petImageView.animationImages = animImages
@@ -188,57 +155,20 @@ class ViewController: UIViewController, StoreViewControllerDelegate {
         var animImages:[UIImage] = []
         for idx in 1...10 {
             animImages.append(UIImage(named: "\(feeling)-\(idx.description)")!)
->>>>>>> anagram-game-branch
+
         }
         
         petImageView.animationImages = animImages
-        petImageView.animationRepeatCount = 2
-        petImageView.animationDuration = 0.7
+        petImageView.animationRepeatCount = 3
+        petImageView.animationDuration = 0.9
         petImageView.startAnimating()
-        self.performSelector("resetPetImageView", withObject: nil, afterDelay: 0.7)
+        self.performSelector("resetPetImageView", withObject: nil, afterDelay: 0.9)
     }
     
     func resetPetImageView() {
         petImageView.animationImages = nil
         petImageView.image = UIImage(named: "okay-1")
         self.performSelector("configurePetImageView", withObject: nil, afterDelay: 3)
-    }
-    
-    func configureClothing() {
-        let headTapRecognizer = UITapGestureRecognizer(target: self, action: "toggleClothingHead:")
-        headClothingImage.addGestureRecognizer(headTapRecognizer)
-        let torsoTapRecognizer = UITapGestureRecognizer(target: self, action: "toggleClothingTorso:")
-        torsoClothingImage.addGestureRecognizer(torsoTapRecognizer)
-        headClothingImage.image = nil
-        torsoClothingImage.image = nil
-    }
-    
-    func toggleClothingHead(gesture:UITapGestureRecognizer) {
-        print("toggle head")
-        var allClothing:[Clothing] = []
-        for idx in 0..<ClothingTypes.count {
-            allClothing.append(Clothing(clothingType: idx))
-        }
-        
-        let filteredClothing = allClothing.filter({$0.bodyPosition == BodyPosition.Head})
-        
-        let idx = arc4random_uniform(UInt32(filteredClothing.count))
-        let image = UIImage(named: filteredClothing[Int(idx)].name.lowercaseString + "_image")
-        headClothingImage.image = image
-    }
-    
-    func toggleClothingTorso(gesture:UITapGestureRecognizer) {
-        var allClothing:[Clothing] = []
-        for idx in 0..<ClothingTypes.count {
-            allClothing.append(Clothing(clothingType: idx))
-        }
-        
-        let filteredClothing = allClothing.filter({$0.bodyPosition == BodyPosition.Torso})
-        
-        let idx = arc4random_uniform(UInt32(filteredClothing.count))
-        let image = UIImage(named: filteredClothing[Int(idx)].name.lowercaseString + "_image")
-        print(filteredClothing[Int(idx)].name.lowercaseString + "-image")
-        torsoClothingImage.image = image
     }
     
     //MARK: Buttons
@@ -259,11 +189,7 @@ class ViewController: UIViewController, StoreViewControllerDelegate {
     }
     
     @IBAction func playButtonTapped(sender: AnyObject) {
-<<<<<<< HEAD
         self.performSegueWithIdentifier("presentAnagramSegue", sender: nil)
-=======
-        self.performSegueWithIdentifier("showAnagramSegue", sender: nil)
->>>>>>> anagram-game-branch
     }
 
     @IBAction func caregiversModuleButtonTapped(sender: AnyObject) {
