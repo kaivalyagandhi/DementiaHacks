@@ -48,8 +48,13 @@
                                     <action selector="moneyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zrt-Kc-Rt7"/>
                                 </connections>
                             </button>
+<<<<<<< HEAD
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4B-Hw-BfH">
                                 <rect key="frame" x="195.5" y="120" width="377" height="120"/>
+=======
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4B-Hw-BfH">
+                                <rect key="frame" x="195.5" y="131" width="377" height="120"/>
+>>>>>>> anagram-game-branch
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="O4B-Hw-BfH" secondAttribute="height" multiplier="1189:379" id="XBi-mt-tEb"/>
@@ -106,7 +111,11 @@
                                 </constraints>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fedora_image" translatesAutoresizingMaskIntoConstraints="NO" id="rTd-6a-AP0">
+<<<<<<< HEAD
                                 <rect key="frame" x="278" y="506.5" width="213" height="176.5"/>
+=======
+                                <rect key="frame" x="278" y="490" width="213" height="176.5"/>
+>>>>>>> anagram-game-branch
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="rTd-6a-AP0" secondAttribute="height" multiplier="41:34" id="sGV-LI-GtF"/>
@@ -176,13 +185,18 @@
                         <outlet property="torsoClothingImage" destination="Auo-0H-hUD" id="yHn-4y-pIb"/>
                         <segue destination="MhD-wC-UNz" kind="presentation" identifier="presentStoreFormSegue" modalPresentationStyle="formSheet" id="WL0-TT-IUj"/>
                         <segue destination="V4X-Sx-47g" kind="presentation" identifier="presentCaregiverSegue" id="xOx-zU-3eX"/>
+<<<<<<< HEAD
                         <segue destination="RGy-Bw-85j" kind="presentation" identifier="presentAnagramSegue" id="jN0-gZ-Iay"/>
+=======
+                        <segue destination="hUt-zP-WLw" kind="presentation" identifier="showAnagramSegue" animates="NO" id="TiX-hV-0Xx"/>
+>>>>>>> anagram-game-branch
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="354" y="372"/>
         </scene>
+<<<<<<< HEAD
         <!--View Controller-->
         <scene sceneID="jiZ-ge-WD3">
             <objects>
@@ -201,6 +215,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="02D-Fz-FlG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1261" y="-848"/>
+=======
+        <!--Anagram View Controller-->
+        <scene sceneID="b1c-zr-oyN">
+            <objects>
+                <viewController id="hUt-zP-WLw" customClass="AnagramViewController" customModule="Demestify" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jOt-Nb-ZBb"/>
+                        <viewControllerLayoutGuide type="bottom" id="9rE-jA-75C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ayU-TY-Ix4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board" translatesAutoresizingMaskIntoConstraints="NO" id="AF6-Gf-HoJ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AF6-Gf-HoJ" firstAttribute="top" secondItem="jOt-Nb-ZBb" secondAttribute="bottom" constant="-20" id="9O5-Lq-t3u"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AF6-Gf-HoJ" secondAttribute="trailing" constant="-20" id="EeN-Qj-hF2"/>
+                            <constraint firstItem="AF6-Gf-HoJ" firstAttribute="leading" secondItem="ayU-TY-Ix4" secondAttribute="leadingMargin" constant="-20" id="MX5-AM-ht8"/>
+                            <constraint firstItem="9rE-jA-75C" firstAttribute="top" secondItem="AF6-Gf-HoJ" secondAttribute="bottom" id="Ux9-gx-Qg2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QPN-aj-4mc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1010" y="-614"/>
+>>>>>>> anagram-game-branch
         </scene>
         <!--Store View Controller-->
         <scene sceneID="Xh4-0X-hbK">
@@ -772,6 +818,7 @@
     <resources>
         <image name="Store-button" width="270" height="283"/>
         <image name="bg" width="2765" height="3686"/>
+        <image name="board" width="1024" height="768"/>
         <image name="coins" width="2520" height="690"/>
         <image name="fedora_image" width="448" height="389"/>
         <image name="healthBar" width="828" height="194"/>
