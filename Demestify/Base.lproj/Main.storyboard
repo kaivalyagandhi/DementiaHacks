@@ -176,11 +176,31 @@
                         <outlet property="torsoClothingImage" destination="Auo-0H-hUD" id="yHn-4y-pIb"/>
                         <segue destination="MhD-wC-UNz" kind="presentation" identifier="presentStoreFormSegue" modalPresentationStyle="formSheet" id="WL0-TT-IUj"/>
                         <segue destination="V4X-Sx-47g" kind="presentation" identifier="presentCaregiverSegue" id="xOx-zU-3eX"/>
+                        <segue destination="RGy-Bw-85j" kind="presentation" identifier="presentAnagramSegue" id="jN0-gZ-Iay"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="354" y="372"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jiZ-ge-WD3">
+            <objects>
+                <viewController id="RGy-Bw-85j" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qjN-KV-dRY"/>
+                        <viewControllerLayoutGuide type="bottom" id="aOd-gG-KvK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tGy-qv-Mfs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="02D-Fz-FlG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1261" y="-848"/>
         </scene>
         <!--Store View Controller-->
         <scene sceneID="Xh4-0X-hbK">

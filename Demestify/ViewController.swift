@@ -191,7 +191,7 @@ class ViewController: UIViewController, StoreViewControllerDelegate {
     }
     
     @IBAction func playButtonTapped(sender: AnyObject) {
-        
+        self.performSegueWithIdentifier("presentAnagramSegue", sender: nil)
     }
 
     @IBAction func caregiversModuleButtonTapped(sender: AnyObject) {
