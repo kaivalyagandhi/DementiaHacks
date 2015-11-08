@@ -23,6 +23,8 @@ class ViewController: UIViewController, StoreViewControllerDelegate {
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var caregiverModuleButton: UIButton!
     @IBOutlet weak var petImageView: UIImageView!
+    @IBOutlet weak var headClothingImage: UIImageView!
+    @IBOutlet weak var torsoClothingImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

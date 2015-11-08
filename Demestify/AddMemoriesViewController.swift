@@ -135,7 +135,10 @@ class AddMemoriesViewController: UIViewController, UITextViewDelegate, UITextFie
     }
     
     func anagramTableViewCellDidDeleteAnagram(item: AnagramModel) {
-        AnagramStore().deleteAnagram(item)
+        AnagramStore().deleteAnagram(item) { (index) -> Void in
+            self.tableView.deleteRowsAtIndexPaths([NSIndexPath(forRow: index, inSection: 0)], withRowAnimation: .Fade)
+
+        }
     }
     
     /*

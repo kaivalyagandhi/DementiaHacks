@@ -39,9 +39,11 @@ class AnagramStore: NSObject, NSCoding {
         NSKeyedArchiver.archiveRootObject(anagrams, toFile: dataFilePath!)
     }
     
-    func deleteAnagram(item:AnagramModel) {
+    func deleteAnagram(item:AnagramModel, completion:(index:Int) -> Void) {
         if anagrams.contains(item) {
-            deleteAnagramAtIndex(anagrams.indexOf(item)!)
+            let index = anagrams.indexOf(item)!
+            deleteAnagramAtIndex(index)
+            completion(index: index)
         }
     }
     
