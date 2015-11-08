@@ -177,7 +177,7 @@
                         <segue destination="MhD-wC-UNz" kind="presentation" identifier="presentStoreFormSegue" modalPresentationStyle="formSheet" id="WL0-TT-IUj"/>
                         <segue destination="V4X-Sx-47g" kind="presentation" identifier="presentCaregiverSegue" id="xOx-zU-3eX"/>
                         <segue destination="hUt-zP-WLw" kind="presentation" identifier="presentAnagramSegue" animates="NO" id="TiX-hV-0Xx"/>
-                        <segue destination="Wh5-SG-8le" kind="presentation" identifier="presentJigsawSegue" id="0dz-M2-nVz"/>
+                        <segue destination="Wh5-SG-8le" kind="presentation" identifier="presentJigsawSegue" animates="NO" id="0dz-M2-nVz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -218,7 +218,7 @@
         <!--Game View Controller-->
         <scene sceneID="nHY-AI-Yex">
             <objects>
-                <viewController id="Wh5-SG-8le" customClass="GameViewController" sceneMemberID="viewController">
+                <viewController id="Wh5-SG-8le" customClass="GameViewController" customModule="Demestify" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vi9-i1-hP8"/>
                         <viewControllerLayoutGuide type="bottom" id="u4a-Ax-al2"/>

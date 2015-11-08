@@ -30,6 +30,7 @@
 		FA05EAFE1BEFD5FE00AD1184 /* PuzzleBeziers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05EAF71BEFD5FE00AD1184 /* PuzzleBeziers.swift */; };
 		FA05EAFF1BEFD5FE00AD1184 /* SlidingPuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05EAF81BEFD5FE00AD1184 /* SlidingPuzzle.swift */; };
 		FA05EB011BEFDC9100AD1184 /* Elvis Presley - Hound Dog - Cover Version  (Instrumental).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA05EB001BEFDC9100AD1184 /* Elvis Presley - Hound Dog - Cover Version  (Instrumental).mp3 */; };
+		FA05EB031BEFE0D800AD1184 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA05EB021BEFE0D800AD1184 /* SpriteKit.framework */; };
 		FA32047F1BEE3BB6007CE6E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32047E1BEE3BB6007CE6E6 /* AppDelegate.swift */; };
 		FA3204811BEE3BB6007CE6E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3204801BEE3BB6007CE6E6 /* ViewController.swift */; };
 		FA3204841BEE3BB6007CE6E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3204821BEE3BB6007CE6E6 /* Main.storyboard */; };
@@ -153,6 +154,7 @@
 		FA05EAF71BEFD5FE00AD1184 /* PuzzleBeziers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleBeziers.swift; sourceTree = "<group>"; };
 		FA05EAF81BEFD5FE00AD1184 /* SlidingPuzzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidingPuzzle.swift; sourceTree = "<group>"; };
 		FA05EB001BEFDC9100AD1184 /* Elvis Presley - Hound Dog - Cover Version  (Instrumental).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Elvis Presley - Hound Dog - Cover Version  (Instrumental).mp3"; sourceTree = "<group>"; };
+		FA05EB021BEFE0D800AD1184 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		FA32047B1BEE3BB6007CE6E6 /* Demestify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demestify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA32047E1BEE3BB6007CE6E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA3204801BEE3BB6007CE6E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA05EB031BEFE0D800AD1184 /* SpriteKit.framework in Frameworks */,
 				FAAFA5721BEE8BBA00CC408B /* libstdc++.6.tbd in Frameworks */,
 				FAAFA5701BEE8A6500CC408B /* Accounts.framework in Frameworks */,
 				FAAFA56E1BEE8A5E00CC408B /* Social.framework in Frameworks */,
@@ -304,6 +307,7 @@
 		0591DB2C3E271EB574F6CC9C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA05EB021BEFE0D800AD1184 /* SpriteKit.framework */,
 				FAAFA5711BEE8BBA00CC408B /* libstdc++.6.tbd */,
 				FAAFA56F1BEE8A6500CC408B /* Accounts.framework */,
 				FAAFA56D1BEE8A5E00CC408B /* Social.framework */,
@@ -367,8 +371,6 @@
 				FA3204D91BEE62AA007CE6E6 /* Caregiver's Module */,
 				FA3204E01BEE7916007CE6E6 /* Store VC */,
 				FAAFA5821BEED97E00CC408B /* Models */,
-				FAAFA5731BEE8D6500CC408B /* Parse Helper.swift */,
-				FA3204AE1BEE40A9007CE6E6 /* Constants.swift */,
 				FAAFA57D1BEEA7ED00CC408B /* Resources */,
 				FA3204D21BEE4286007CE6E6 /* Frameworks */,
 			);
@@ -487,6 +489,8 @@
 		FAAFA57D1BEEA7ED00CC408B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FAAFA5731BEE8D6500CC408B /* Parse Helper.swift */,
+				FA3204AE1BEE40A9007CE6E6 /* Constants.swift */,
 				FA05EB001BEFDC9100AD1184 /* Elvis Presley - Hound Dog - Cover Version  (Instrumental).mp3 */,
 				FA05EACE1BEFC81D00AD1184 /* 4.jpeg */,
 				FA05EACF1BEFC81D00AD1184 /* 6.jpg */,

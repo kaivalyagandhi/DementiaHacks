@@ -29,7 +29,17 @@ class GameViewController: UIViewController {
             scene.scaleMode = .AspectFill
             
             skView.presentScene(scene)
+            
+            
+            let backbutton = UIButton(frame: CGRect(x: 20, y: 20, width: 50, height: 50))
+            backbutton.setImage(UIImage(named: "back"), forState: .Normal)
+            backbutton.addTarget(self, action: "dismiss", forControlEvents: .TouchUpInside)
+            skView.addSubview(backbutton)
         }
+    }
+    
+    func dismiss() {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 
     override func shouldAutorotate() -> Bool {

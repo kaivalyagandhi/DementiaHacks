@@ -25,9 +25,7 @@ class SliddingPuzzle: SKScene {
         
         
         setBorder()
-        //\//\\
-        ///\\//
-        startNewImageGameLevel(ImageLevels.easy, image: UIImage(named: "car")!)
+        startNewImageGameLevel(ImageLevels.easy, image: UIImage(named: "4")!)
         
     }
     func startNewNumberGameLevel(level : NumberLevels){
@@ -47,6 +45,7 @@ class SliddingPuzzle: SKScene {
                 row += 1
             }
         }
+        
         for point in points{
             setTile(point, size: CGSize(width: width - 1, height: width - 1))
             tiles[points.indexOf(point)!].textLabel?.text = String(points.indexOf(point)! + 1)
@@ -233,6 +232,7 @@ class SliddingPuzzle: SKScene {
         }
         
     }
+
     
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */

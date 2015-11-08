@@ -306,9 +306,11 @@ extension MutableCollectionType where Index == Int {
         }
     }
 }
+
 public func randomInRange (lower: Int , upper: Int) -> Int {
     return lower + Int(arc4random_uniform(UInt32(upper - lower + 1)))
 }
+
 public func delay(delay:Double, closure:()->()) {
     dispatch_after(
         dispatch_time(
