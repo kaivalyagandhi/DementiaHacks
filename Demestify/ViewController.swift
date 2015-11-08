@@ -91,7 +91,7 @@ class ViewController: UIViewController, StoreViewControllerDelegate {
         let rand = arc4random_uniform(6)
         
         var animImages:[UIImage] = []
-        for idx in 1..<10 {
+        for idx in 1...10 {
             animImages.append(UIImage(named: "\(petAnimations[Int(rand)])-\(idx.description)")!)
         }
         
