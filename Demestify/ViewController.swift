@@ -15,10 +15,7 @@ class ViewController: UIViewController, StoreViewControllerDelegate {
     
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     var gameMode = 0
-    
-    
     @IBOutlet weak var shopButton: UIButton!
-    
     @IBOutlet weak var healthBarButton: UIButton!
     @IBOutlet weak var healthBarImageView: UIImageView!
     var hbImageView:UIImageView!
