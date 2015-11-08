@@ -9,28 +9,54 @@
 import UIKit
 import Parse
 
-class AddPhotosViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class AddPhotosViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
     
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
     @IBOutlet weak var addPhotoButton: UIButton!
     @IBOutlet weak var closeButton: UIButton!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     var imagePicker:UIImagePickerController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imagePicker = UIImagePickerController()
-        imagePicker.delegate = self
-        imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        //self.navigationController?.set.supportedInterfaceOrientations() = [UIInterfaceOrientationMask.Portrait, UIInterfaceOrientationMask.LandscapeLeft, UIInterfaceOrientationMask.LandscapeRight]
+        
     }
     
+    
+    
     func configureViews() {
+        addPhotoButton.layer.borderWidth = 1
+        addPhotoButton.layer.cornerRadius = 3
         
+    }
+    
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return appDelegate.imageManager.images.count
         
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("imageCell", forIndexPath: indexPath) as! ImageCollectionViewCell
+        
+        cell.imageView.image = appDelegate.imageManager.images[indexPath.item]
+        
+        return cell
     }
     
     @IBAction func addPhotoButtonTapped(sender: AnyObject) {
+        
+        imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
         self.presentViewController(imagePicker, animated: true, completion: nil)
     }
     
@@ -67,7 +93,7 @@ class AddPhotosViewController: UIViewController, UINavigationControllerDelegate,
             savePhoto(pickedImage)
 
             //TODO: - Reload collectionView
-            //self.imageCollectionView.reloadData()
+            collectionView.reloadData()
         }
         
         dismissViewControllerAnimated(true, completion: nil)
