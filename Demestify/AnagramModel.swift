@@ -49,11 +49,13 @@ class AnagramStore: NSObject, NSCoding {
     
     func deleteAnagramAtIndex(index:Int) {
         anagrams.removeAtIndex(index)
+        saveAnagrams()
     }
     
     func addAnagram(question:String, answer:String) {
         let newAnagram = AnagramModel(answer: answer, question: question)
         self.anagrams.insert(newAnagram, atIndex: 0)
+        saveAnagrams()
     }
 }
 

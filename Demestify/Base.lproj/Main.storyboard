@@ -49,7 +49,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4B-Hw-BfH">
-                                <rect key="frame" x="195.5" y="270" width="377" height="120"/>
+                                <rect key="frame" x="195.5" y="120" width="377" height="120"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="O4B-Hw-BfH" secondAttribute="height" multiplier="1189:379" id="XBi-mt-tEb"/>
@@ -105,14 +105,14 @@
                                     <constraint firstAttribute="width" secondItem="jwt-dJ-49N" secondAttribute="height" multiplier="333:500" constant="46.613999999999976" id="ZyJ-PC-3R4"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fedora_image" translatesAutoresizingMaskIntoConstraints="NO" id="rTd-6a-AP0">
-                                <rect key="frame" x="278" y="490" width="213" height="176.5"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fedora_image" translatesAutoresizingMaskIntoConstraints="NO" id="rTd-6a-AP0">
+                                <rect key="frame" x="278" y="506.5" width="213" height="176.5"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="rTd-6a-AP0" secondAttribute="height" multiplier="41:34" id="sGV-LI-GtF"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suit_image" translatesAutoresizingMaskIntoConstraints="NO" id="Auo-0H-hUD">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suit_image" translatesAutoresizingMaskIntoConstraints="NO" id="Auo-0H-hUD">
                                 <rect key="frame" x="131" y="723" width="506" height="301"/>
                                 <animations/>
                                 <constraints>
@@ -143,14 +143,14 @@
                             <constraint firstAttribute="leadingMargin" secondItem="Z1o-Ds-xEN" secondAttribute="leading" id="Tcd-J1-kSr"/>
                             <constraint firstItem="jwt-dJ-49N" firstAttribute="leading" secondItem="Auo-0H-hUD" secondAttribute="trailing" constant="-416" id="Zx9-n9-1RG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Z4z-h5-XnW" secondAttribute="trailing" constant="-20" id="aCA-bb-KZS"/>
-                            <constraint firstItem="jwt-dJ-49N" firstAttribute="top" secondItem="rTd-6a-AP0" secondAttribute="bottom" constant="-83.5" id="b5A-Iv-Hkh"/>
+                            <constraint firstItem="jwt-dJ-49N" firstAttribute="top" secondItem="rTd-6a-AP0" secondAttribute="bottom" constant="-100" id="b5A-Iv-Hkh"/>
                             <constraint firstItem="9T3-RI-HTi" firstAttribute="trailing" secondItem="Bap-Jp-9On" secondAttribute="trailing" constant="-10" id="dqU-Ah-cLY"/>
                             <constraint firstItem="Z4z-h5-XnW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="fG9-9o-I60"/>
                             <constraint firstItem="rTd-6a-AP0" firstAttribute="centerX" secondItem="jwt-dJ-49N" secondAttribute="centerX" id="gbP-GB-mO5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Bap-Jp-9On" secondAttribute="trailing" id="l18-BD-xlp"/>
                             <constraint firstItem="Z4z-h5-XnW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="qmo-R3-jes"/>
                             <constraint firstItem="I6m-QO-SCq" firstAttribute="top" secondItem="Bap-Jp-9On" secondAttribute="bottom" constant="8" id="t0i-bR-3VH"/>
-                            <constraint firstItem="O4B-Hw-BfH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="250" id="uii-ew-zga"/>
+                            <constraint firstItem="O4B-Hw-BfH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="uii-ew-zga"/>
                             <constraint firstItem="Auo-0H-hUD" firstAttribute="top" secondItem="jwt-dJ-49N" secondAttribute="bottom" constant="-281" id="v6V-Ra-goB"/>
                             <constraint firstItem="9T3-RI-HTi" firstAttribute="top" secondItem="Bap-Jp-9On" secondAttribute="top" id="vQa-m0-wuX"/>
                         </constraints>
