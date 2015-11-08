@@ -15,7 +15,7 @@ class ImageStore: NSObject, NSCoding {
     override init() {
         let manager = NSFileManager.defaultManager()
         let url = manager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first
-        dataFilePath = url!.URLByAppendingPathComponent("objectsArray").path!
+        dataFilePath = url!.URLByAppendingPathComponent("imagesArray").path!
         
         if manager.fileExistsAtPath(dataFilePath!) {
             print("Getting urls from archive")

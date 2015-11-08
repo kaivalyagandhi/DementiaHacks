@@ -67,6 +67,7 @@
 		FAAFA58F1BEF207200CC408B /* AveriaSansLibre-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAAFA5881BEF207200CC408B /* AveriaSansLibre-Regular.ttf */; };
 		FAAFA5901BEF207200CC408B /* CarterOne.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAAFA5891BEF207200CC408B /* CarterOne.ttf */; };
 		FAAFA5921BEF2EB700CC408B /* AddMemoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFA5911BEF2EB700CC408B /* AddMemoriesViewController.swift */; };
+		FAAFA5941BEF361700CC408B /* AnagramTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFA5931BEF361700CC408B /* AnagramTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +172,7 @@
 		FAAFA5881BEF207200CC408B /* AveriaSansLibre-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AveriaSansLibre-Regular.ttf"; sourceTree = "<group>"; };
 		FAAFA5891BEF207200CC408B /* CarterOne.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CarterOne.ttf; sourceTree = "<group>"; };
 		FAAFA5911BEF2EB700CC408B /* AddMemoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMemoriesViewController.swift; sourceTree = "<group>"; };
+		FAAFA5931BEF361700CC408B /* AnagramTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnagramTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -334,6 +336,7 @@
 			children = (
 				FA3204D51BEE624D007CE6E6 /* AddPhotosViewController.swift */,
 				FAAFA5911BEF2EB700CC408B /* AddMemoriesViewController.swift */,
+				FAAFA5931BEF361700CC408B /* AnagramTableViewCell.swift */,
 			);
 			name = "Caregiver's Module";
 			sourceTree = "<group>";
@@ -617,6 +620,7 @@
 				FAAFA5771BEE9B0000CC408B /* FoodItemCollectionViewCell.swift in Sources */,
 				FA3204AF1BEE40A9007CE6E6 /* Constants.swift in Sources */,
 				FAAFA5921BEF2EB700CC408B /* AddMemoriesViewController.swift in Sources */,
+				FAAFA5941BEF361700CC408B /* AnagramTableViewCell.swift in Sources */,
 				FA3204DF1BEE767F007CE6E6 /* Store Model.swift in Sources */,
 				FA3204D41BEE56D7007CE6E6 /* PetModel.swift in Sources */,
 				FA7BE5411BEE88F6005C314B /* MZFormSheetPresentationViewControllerSegue.m in Sources */,

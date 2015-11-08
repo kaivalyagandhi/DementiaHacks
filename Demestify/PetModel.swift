@@ -21,7 +21,7 @@ class PetModel: NSObject {
         }
         petHealth = NSUserDefaults.standardUserDefaults().integerForKey("petHealth")
         if petHealth == 0 {
-            petHealth = 90
+            petHealth = 60
         }
         
         if let foundPurchasedClothing = NSUserDefaults.standardUserDefaults().objectForKey("purchasedClothing") {

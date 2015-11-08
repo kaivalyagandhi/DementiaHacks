@@ -86,24 +86,27 @@ class ViewController: UIViewController, StoreViewControllerDelegate {
     
     func configurePetImageView() {
         
+        let rand = arc4random_uniform(6)
         
-        var jumpImages:[UIImage] = []
-        for idx in 0..<9 {
-            jumpImages.append(UIImage(named: "Sprites__00\(idx.description)")!)
+        var animImages:[UIImage] = []
+        for idx in 1..<10 {
+            animImages.append(UIImage(named: "\(petAnimations[Int(rand)])-\(idx.description)")!)
         }
         
-        petImageView.animationImages = jumpImages
+        petImageView.animationImages = animImages
         petImageView.animationRepeatCount = 2
         petImageView.animationDuration = 0.7
         petImageView.startAnimating()
-        self.performSelector("animatePetImageView", withObject: nil, afterDelay: 0.7)
-        
+        self.performSelector("resetPetImageView", withObject: nil, afterDelay: 0.7)
     }
     
-    func animatePetImageView() {
+    func resetPetImageView() {
         petImageView.animationImages = nil
-        petImageView.image = UIImage(named: "Sprites__001")
+        petImageView.image = UIImage(named: "okay-1")
+        self.performSelector("configurePetImageView", withObject: nil, afterDelay: 3)
     }
+    
+    
     
     //MARK: Buttons
     @IBAction func healthButtonTapped(sender: AnyObject) {

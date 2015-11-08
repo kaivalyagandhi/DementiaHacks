@@ -16,7 +16,7 @@ class AnagramStore: NSObject, NSCoding {
     override init() {
         let manager = NSFileManager.defaultManager()
         let url = manager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first
-        dataFilePath = url!.URLByAppendingPathComponent("objectsArray").path!
+        dataFilePath = url!.URLByAppendingPathComponent("anagramsArray").path!
         
         if manager.fileExistsAtPath(dataFilePath!) {
             print("Getting urls from archive")
@@ -28,7 +28,7 @@ class AnagramStore: NSObject, NSCoding {
     required init?(coder aDecoder: NSCoder) {
         super.init()
         anagrams = aDecoder.decodeObjectForKey("anagrams") as! [AnagramModel]
-        print("found " + anagrams.count.description + " images")
+        print("found " + anagrams.count.description + " anagrams")
     }
     
     func encodeWithCoder(aCoder: NSCoder) {
@@ -37,6 +37,16 @@ class AnagramStore: NSObject, NSCoding {
     
     func saveAnagrams() {
         NSKeyedArchiver.archiveRootObject(anagrams, toFile: dataFilePath!)
+    }
+    
+    func deleteAnagram(item:AnagramModel) {
+        if anagrams.contains(item) {
+            deleteAnagramAtIndex(anagrams.indexOf(item)!)
+        }
+    }
+    
+    func deleteAnagramAtIndex(index:Int) {
+        anagrams.removeAtIndex(index)
     }
 }
 

@@ -368,7 +368,7 @@
         <!--Memories-->
         <scene sceneID="9K8-dm-APs">
             <objects>
-                <viewController id="p8R-vu-1qa" sceneMemberID="viewController">
+                <viewController id="p8R-vu-1qa" customClass="AddMemoriesViewController" customModule="Demestify" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WQL-sM-8q9"/>
                         <viewControllerLayoutGuide type="bottom" id="k51-EV-Kjo"/>
@@ -418,6 +418,18 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5t-qx-6hQ">
+                                <rect key="frame" x="361" y="497" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Characters remaining" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdQ-wX-taJ">
+                                <rect key="frame" x="440.5" y="376" width="103.5" height="12"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qwA-3b-f0e">
                                 <rect key="frame" x="0.0" y="575" width="768" height="400"/>
                                 <animations/>
@@ -426,7 +438,7 @@
                                     <constraint firstAttribute="height" constant="400" id="XeW-J7-pA1"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="anagramCell" rowHeight="70" id="KcK-uR-75O">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="anagramCell" rowHeight="70" id="KcK-uR-75O" customClass="AnagramTableViewCell" customModule="Demestify" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="768" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KcK-uR-75O" id="PLO-sE-4zq">
@@ -440,8 +452,8 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.74680637668918914" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anser" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWh-9F-syJ">
-                                                    <rect key="frame" x="8" y="46" width="33" height="14.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWh-9F-syJ">
+                                                    <rect key="frame" x="-1" y="46" width="42" height="15"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.0" green="0.47435238489999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -455,6 +467,9 @@
                                                         <constraint firstAttribute="height" constant="30" id="biV-SQ-vXE"/>
                                                     </constraints>
                                                     <state key="normal" image="x-icon"/>
+                                                    <connections>
+                                                        <action selector="deleteButtonTapped:" destination="KcK-uR-75O" eventType="touchUpInside" id="ynI-rA-FyC"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <animations/>
@@ -468,21 +483,13 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <connections>
+                                            <outlet property="answerLabel" destination="cWh-9F-syJ" id="JAx-Ka-saw"/>
+                                            <outlet property="questionLabel" destination="owh-B8-I8v" id="JGN-Zd-eqg"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5t-qx-6hQ">
-                                <rect key="frame" x="361" y="497" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Characters remaining" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdQ-wX-taJ">
-                                <rect key="frame" x="440.5" y="376" width="103.5" height="12"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -510,6 +517,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Memories" id="Xvo-L9-b9l"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="answerTextField" destination="gpT-LX-kgj" id="at8-Hw-CKX"/>
+                        <outlet property="charactersRemainingLabel" destination="MdQ-wX-taJ" id="8cw-QS-nKA"/>
+                        <outlet property="questionTextView" destination="QPo-1H-5Du" id="f4b-vQ-ELz"/>
+                        <outlet property="submitButton" destination="e5t-qx-6hQ" id="bju-ri-dUR"/>
+                        <outlet property="tableView" destination="qwA-3b-f0e" id="HZs-mt-Dfe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V2O-H4-hkT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
