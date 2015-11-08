@@ -38,6 +38,20 @@ class GameController {
     self.audioController = AudioController()
     self.audioController.preloadAudioEffects(AudioEffectFiles)
   }
+    
+    func randomStringWithLength(anagramToJumble : String) -> NSString{
+        let letters : NSString = anagramToJumble;
+        
+        let randomString : NSMutableString = NSMutableString(capacity: letters.length)
+        
+        for (var i=0; i < letters.length; i++){
+            let length = UInt32 (letters.length)
+            let rand = arc4random_uniform(length)
+            randomString.appendFormat("%C", letters.characterAtIndex(Int(rand)))
+        }
+        
+        return randomString
+    }
   
   func dealRandomAnagram () {
     //1
