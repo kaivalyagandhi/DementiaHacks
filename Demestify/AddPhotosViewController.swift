@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class CaregiversModuleViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class AddPhotosViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
@@ -23,10 +23,10 @@ class CaregiversModuleViewController: UIViewController, UINavigationControllerDe
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-        // Do any additional setup after loading the view.
     }
     
     func configureViews() {
+        
         
     }
     

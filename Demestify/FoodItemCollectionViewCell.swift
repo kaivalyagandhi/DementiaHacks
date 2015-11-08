@@ -28,8 +28,6 @@ class FoodItemCollectionViewCell: UICollectionViewCell {
     func configureCell() {
         costLabel.text = foodItem.cost.description
         healthLabel.text = foodItem.health.description
-        foodImageView.image = UIImage(named: foodItem.name + "image")
+        foodImageView.image = UIImage(named: foodItem.name.lowercaseString + "_image")
     }
-    
-    
 }

@@ -34,7 +34,7 @@
 		FA3204CF1BEE426D007CE6E6 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3204CE1BEE426D007CE6E6 /* libz.tbd */; };
 		FA3204D11BEE4275007CE6E6 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3204D01BEE4275007CE6E6 /* libsqlite3.tbd */; };
 		FA3204D41BEE56D7007CE6E6 /* PetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3204D31BEE56D7007CE6E6 /* PetModel.swift */; };
-		FA3204D71BEE624D007CE6E6 /* CaregiversModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3204D51BEE624D007CE6E6 /* CaregiversModuleViewController.swift */; };
+		FA3204D71BEE624D007CE6E6 /* AddPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3204D51BEE624D007CE6E6 /* AddPhotosViewController.swift */; };
 		FA3204DC1BEE6EFC007CE6E6 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3204DA1BEE6EFC007CE6E6 /* StoreViewController.swift */; };
 		FA3204DF1BEE767F007CE6E6 /* Store Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3204DE1BEE767F007CE6E6 /* Store Model.swift */; };
 		FA3205581BEE8148007CE6E6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FA3205571BEE8148007CE6E6 /* Podfile */; };
@@ -59,6 +59,14 @@
 		FAAFA57C1BEE9B0F00CC408B /* ClothingItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAFA57A1BEE9B0F00CC408B /* ClothingItemCollectionViewCell.xib */; };
 		FAAFA57F1BEECA2400CC408B /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFA57E1BEECA2400CC408B /* ImageModel.swift */; };
 		FAAFA5811BEECD7200CC408B /* AnagramModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFA5801BEECD7200CC408B /* AnagramModel.swift */; };
+		FAAFA58A1BEF207200CC408B /* AveriaSansLibre-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAAFA5831BEF207200CC408B /* AveriaSansLibre-Bold.ttf */; };
+		FAAFA58B1BEF207200CC408B /* AveriaSansLibre-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAAFA5841BEF207200CC408B /* AveriaSansLibre-BoldItalic.ttf */; };
+		FAAFA58C1BEF207200CC408B /* AveriaSansLibre-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAAFA5851BEF207200CC408B /* AveriaSansLibre-Italic.ttf */; };
+		FAAFA58D1BEF207200CC408B /* AveriaSansLibre-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAAFA5861BEF207200CC408B /* AveriaSansLibre-Light.ttf */; };
+		FAAFA58E1BEF207200CC408B /* AveriaSansLibre-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAAFA5871BEF207200CC408B /* AveriaSansLibre-LightItalic.ttf */; };
+		FAAFA58F1BEF207200CC408B /* AveriaSansLibre-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAAFA5881BEF207200CC408B /* AveriaSansLibre-Regular.ttf */; };
+		FAAFA5901BEF207200CC408B /* CarterOne.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAAFA5891BEF207200CC408B /* CarterOne.ttf */; };
+		FAAFA5921BEF2EB700CC408B /* AddMemoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFA5911BEF2EB700CC408B /* AddMemoriesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,7 +122,7 @@
 		FA3204CE1BEE426D007CE6E6 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		FA3204D01BEE4275007CE6E6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		FA3204D31BEE56D7007CE6E6 /* PetModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetModel.swift; sourceTree = "<group>"; };
-		FA3204D51BEE624D007CE6E6 /* CaregiversModuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaregiversModuleViewController.swift; sourceTree = "<group>"; };
+		FA3204D51BEE624D007CE6E6 /* AddPhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPhotosViewController.swift; sourceTree = "<group>"; };
 		FA3204DA1BEE6EFC007CE6E6 /* StoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		FA3204DE1BEE767F007CE6E6 /* Store Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store Model.swift"; sourceTree = "<group>"; };
 		FA3204E11BEE7A0C007CE6E6 /* Demestify-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demestify-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -155,6 +163,14 @@
 		FAAFA57A1BEE9B0F00CC408B /* ClothingItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClothingItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		FAAFA57E1BEECA2400CC408B /* ImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		FAAFA5801BEECD7200CC408B /* AnagramModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnagramModel.swift; sourceTree = "<group>"; };
+		FAAFA5831BEF207200CC408B /* AveriaSansLibre-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AveriaSansLibre-Bold.ttf"; sourceTree = "<group>"; };
+		FAAFA5841BEF207200CC408B /* AveriaSansLibre-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AveriaSansLibre-BoldItalic.ttf"; sourceTree = "<group>"; };
+		FAAFA5851BEF207200CC408B /* AveriaSansLibre-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AveriaSansLibre-Italic.ttf"; sourceTree = "<group>"; };
+		FAAFA5861BEF207200CC408B /* AveriaSansLibre-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AveriaSansLibre-Light.ttf"; sourceTree = "<group>"; };
+		FAAFA5871BEF207200CC408B /* AveriaSansLibre-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AveriaSansLibre-LightItalic.ttf"; sourceTree = "<group>"; };
+		FAAFA5881BEF207200CC408B /* AveriaSansLibre-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AveriaSansLibre-Regular.ttf"; sourceTree = "<group>"; };
+		FAAFA5891BEF207200CC408B /* CarterOne.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CarterOne.ttf; sourceTree = "<group>"; };
+		FAAFA5911BEF2EB700CC408B /* AddMemoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMemoriesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +298,13 @@
 		FA3204D21BEE4286007CE6E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FAAFA5831BEF207200CC408B /* AveriaSansLibre-Bold.ttf */,
+				FAAFA5841BEF207200CC408B /* AveriaSansLibre-BoldItalic.ttf */,
+				FAAFA5851BEF207200CC408B /* AveriaSansLibre-Italic.ttf */,
+				FAAFA5861BEF207200CC408B /* AveriaSansLibre-Light.ttf */,
+				FAAFA5871BEF207200CC408B /* AveriaSansLibre-LightItalic.ttf */,
+				FAAFA5881BEF207200CC408B /* AveriaSansLibre-Regular.ttf */,
+				FAAFA5891BEF207200CC408B /* CarterOne.ttf */,
 				FA3205571BEE8148007CE6E6 /* Podfile */,
 				FA3204E11BEE7A0C007CE6E6 /* Demestify-Bridging-Header.h */,
 				FA7BE5451BEE8924005C314B /* MZFormSheet */,
@@ -309,7 +332,8 @@
 		FA3204D91BEE62AA007CE6E6 /* Caregiver's Module */ = {
 			isa = PBXGroup;
 			children = (
-				FA3204D51BEE624D007CE6E6 /* CaregiversModuleViewController.swift */,
+				FA3204D51BEE624D007CE6E6 /* AddPhotosViewController.swift */,
+				FAAFA5911BEF2EB700CC408B /* AddMemoriesViewController.swift */,
 			);
 			name = "Caregiver's Module";
 			sourceTree = "<group>";
@@ -488,11 +512,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAAFA58A1BEF207200CC408B /* AveriaSansLibre-Bold.ttf in Resources */,
+				FAAFA58F1BEF207200CC408B /* AveriaSansLibre-Regular.ttf in Resources */,
+				FAAFA58B1BEF207200CC408B /* AveriaSansLibre-BoldItalic.ttf in Resources */,
 				FA3205581BEE8148007CE6E6 /* Podfile in Resources */,
+				FAAFA5901BEF207200CC408B /* CarterOne.ttf in Resources */,
 				FA3204891BEE3BB6007CE6E6 /* LaunchScreen.storyboard in Resources */,
 				FA3204861BEE3BB6007CE6E6 /* Assets.xcassets in Resources */,
 				FAAFA57C1BEE9B0F00CC408B /* ClothingItemCollectionViewCell.xib in Resources */,
 				FAAFA5781BEE9B0000CC408B /* FoodItemCollectionViewCell.xib in Resources */,
+				FAAFA58D1BEF207200CC408B /* AveriaSansLibre-Light.ttf in Resources */,
+				FAAFA58E1BEF207200CC408B /* AveriaSansLibre-LightItalic.ttf in Resources */,
+				FAAFA58C1BEF207200CC408B /* AveriaSansLibre-Italic.ttf in Resources */,
 				FA3204841BEE3BB6007CE6E6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -569,7 +600,7 @@
 				FA3204811BEE3BB6007CE6E6 /* ViewController.swift in Sources */,
 				FAAFA5741BEE8D6500CC408B /* Parse Helper.swift in Sources */,
 				FA7BE53E1BEE88F6005C314B /* MZFormSheetPresentationViewController.m in Sources */,
-				FA3204D71BEE624D007CE6E6 /* CaregiversModuleViewController.swift in Sources */,
+				FA3204D71BEE624D007CE6E6 /* AddPhotosViewController.swift in Sources */,
 				FA7BE53B1BEE88F6005C314B /* MZFormSheetContentSizingNavigationController.m in Sources */,
 				FAAFA57B1BEE9B0F00CC408B /* ClothingItemCollectionViewCell.swift in Sources */,
 				FA7BE5441BEE88F6005C314B /* UIViewController+TargetViewController.m in Sources */,
@@ -585,6 +616,7 @@
 				FA7BE5431BEE88F6005C314B /* MZTransition.m in Sources */,
 				FAAFA5771BEE9B0000CC408B /* FoodItemCollectionViewCell.swift in Sources */,
 				FA3204AF1BEE40A9007CE6E6 /* Constants.swift in Sources */,
+				FAAFA5921BEF2EB700CC408B /* AddMemoriesViewController.swift in Sources */,
 				FA3204DF1BEE767F007CE6E6 /* Store Model.swift in Sources */,
 				FA3204D41BEE56D7007CE6E6 /* PetModel.swift in Sources */,
 				FA7BE5411BEE88F6005C314B /* MZFormSheetPresentationViewControllerSegue.m in Sources */,

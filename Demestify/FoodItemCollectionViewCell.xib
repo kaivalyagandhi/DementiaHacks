@@ -9,54 +9,137 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FoodItemCollectionViewCell" customModule="Demestify" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="120" height="150"/>
+            <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="120" height="150"/>
+                <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYq-Kd-YcR">
-                        <rect key="frame" x="8" y="120" width="36" height="20.5"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card-bg" translatesAutoresizingMaskIntoConstraints="NO" id="XpO-c5-qnX">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
                         <animations/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="87Q-K9-hpo">
-                        <rect key="frame" x="8" y="8" width="104" height="104"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card-container" translatesAutoresizingMaskIntoConstraints="NO" id="87Q-K9-hpo">
+                        <rect key="frame" x="8" y="8" width="134" height="134"/>
                         <animations/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="87Q-K9-hpo" secondAttribute="height" multiplier="104:104" id="eHK-sk-D7O"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Health" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AA9-cD-820">
-                        <rect key="frame" x="62" y="121" width="50" height="20.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AA9-cD-820">
+                        <rect key="frame" x="112" y="112" width="21.5" height="21.5"/>
                         <animations/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
+                        <color key="shadowColor" red="0.72245896460000003" green="0.72245896460000003" blue="0.72245896460000003" alpha="0.74928737329999995" colorSpace="calibratedRGB"/>
+                        <size key="shadowOffset" width="1" height="1"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fries_image" translatesAutoresizingMaskIntoConstraints="NO" id="7Vw-ed-Ju4">
+                        <rect key="frame" x="25" y="14" width="100" height="100"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="5Tz-ow-TZB"/>
+                            <constraint firstAttribute="width" secondItem="7Vw-ed-Ju4" secondAttribute="height" multiplier="1:1" id="Rfp-pw-CYV"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart-icon" translatesAutoresizingMaskIntoConstraints="NO" id="fhv-9x-9DQ">
+                        <rect key="frame" x="92" y="113" width="20" height="20"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="FoM-GJ-Q87"/>
+                            <constraint firstAttribute="width" secondItem="fhv-9x-9DQ" secondAttribute="height" multiplier="20:20" id="YGk-33-f7s"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buy" translatesAutoresizingMaskIntoConstraints="NO" id="rav-S4-OGY">
+                        <rect key="frame" x="8" y="145" width="134" height="47"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="rav-S4-OGY" secondAttribute="height" multiplier="20:7" id="Zw0-7e-lAz"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYq-Kd-YcR">
+                        <rect key="frame" x="8" y="158.5" width="134" height="21.5"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="124" id="fqI-cH-pki"/>
+                            <constraint firstAttribute="height" constant="21" id="l0x-IX-g7p"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" red="0.72245896460000003" green="0.72245896460000003" blue="0.72245896460000003" alpha="0.74928737329999995" colorSpace="calibratedRGB"/>
+                        <size key="shadowOffset" width="1" height="1"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="fqI-cH-pki"/>
+                                <exclude reference="l0x-IX-g7p"/>
+                            </mask>
+                        </variation>
                     </label>
                 </subviews>
                 <animations/>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <animations/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="87Q-K9-hpo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="2Rg-Li-KP7"/>
+                <constraint firstItem="7Vw-ed-Ju4" firstAttribute="centerX" secondItem="87Q-K9-hpo" secondAttribute="centerX" id="5MY-LE-36u"/>
                 <constraint firstItem="lYq-Kd-YcR" firstAttribute="leading" secondItem="87Q-K9-hpo" secondAttribute="leading" id="6MG-Eg-nJj"/>
+                <constraint firstItem="AA9-cD-820" firstAttribute="leading" secondItem="87Q-K9-hpo" secondAttribute="leading" constant="8" id="9Vd-Rd-uBa"/>
+                <constraint firstItem="XpO-c5-qnX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9kL-fJ-uy4"/>
+                <constraint firstItem="AA9-cD-820" firstAttribute="centerY" secondItem="fhv-9x-9DQ" secondAttribute="centerY" id="9w5-EJ-0ye"/>
                 <constraint firstItem="87Q-K9-hpo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Ela-xR-RVs"/>
+                <constraint firstItem="rav-S4-OGY" firstAttribute="leading" secondItem="87Q-K9-hpo" secondAttribute="leading" id="G5H-vN-KBo"/>
+                <constraint firstItem="lYq-Kd-YcR" firstAttribute="centerY" secondItem="rav-S4-OGY" secondAttribute="centerY" id="Ikl-rj-PdO"/>
+                <constraint firstItem="lYq-Kd-YcR" firstAttribute="centerY" secondItem="rav-S4-OGY" secondAttribute="centerY" id="Ikr-m3-xkv"/>
+                <constraint firstItem="87Q-K9-hpo" firstAttribute="top" secondItem="7Vw-ed-Ju4" secondAttribute="bottom" constant="-106" id="KIL-rM-9Zn"/>
+                <constraint firstItem="AA9-cD-820" firstAttribute="bottom" secondItem="87Q-K9-hpo" secondAttribute="bottom" constant="-8" id="Kal-2I-hD5"/>
+                <constraint firstItem="rav-S4-OGY" firstAttribute="trailing" secondItem="87Q-K9-hpo" secondAttribute="trailing" id="NmL-Xi-q2P"/>
+                <constraint firstItem="7Vw-ed-Ju4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="14" id="SdF-Yh-zW2"/>
+                <constraint firstItem="rav-S4-OGY" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="TNs-9A-rSV"/>
+                <constraint firstItem="87Q-K9-hpo" firstAttribute="top" secondItem="7Vw-ed-Ju4" secondAttribute="bottom" constant="-106" id="Yfl-er-PV1"/>
                 <constraint firstAttribute="trailing" secondItem="87Q-K9-hpo" secondAttribute="trailing" constant="8" id="ZfS-of-5xq"/>
+                <constraint firstAttribute="bottom" secondItem="rav-S4-OGY" secondAttribute="bottom" constant="8" id="b3i-kB-gKV"/>
+                <constraint firstAttribute="trailing" secondItem="XpO-c5-qnX" secondAttribute="trailing" id="bab-13-cZH"/>
+                <constraint firstItem="lYq-Kd-YcR" firstAttribute="trailing" secondItem="rav-S4-OGY" secondAttribute="trailing" id="dij-gh-gaW"/>
                 <constraint firstItem="AA9-cD-820" firstAttribute="top" secondItem="87Q-K9-hpo" secondAttribute="bottom" constant="8" id="e7g-C2-1p2"/>
+                <constraint firstItem="lYq-Kd-YcR" firstAttribute="leading" secondItem="rav-S4-OGY" secondAttribute="leading" id="i0R-6E-oRs"/>
+                <constraint firstItem="XpO-c5-qnX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kKm-39-KbS"/>
+                <constraint firstItem="AA9-cD-820" firstAttribute="leading" secondItem="fhv-9x-9DQ" secondAttribute="trailing" id="ooh-25-aQ4"/>
                 <constraint firstItem="AA9-cD-820" firstAttribute="trailing" secondItem="87Q-K9-hpo" secondAttribute="trailing" id="qEm-CN-GaP"/>
+                <constraint firstItem="lYq-Kd-YcR" firstAttribute="leading" secondItem="rav-S4-OGY" secondAttribute="leading" id="tDb-gi-gEo"/>
                 <constraint firstItem="lYq-Kd-YcR" firstAttribute="top" secondItem="87Q-K9-hpo" secondAttribute="bottom" constant="8" id="tVV-g5-HTS"/>
+                <constraint firstAttribute="bottom" secondItem="XpO-c5-qnX" secondAttribute="bottom" id="w4C-9d-dH3"/>
+                <constraint firstItem="AA9-cD-820" firstAttribute="trailing" secondItem="87Q-K9-hpo" secondAttribute="trailing" constant="-8" id="wR5-Ea-jNe"/>
+                <constraint firstItem="lYq-Kd-YcR" firstAttribute="trailing" secondItem="rav-S4-OGY" secondAttribute="trailing" id="xvr-Xw-moX"/>
             </constraints>
-            <size key="customSize" width="120" height="150"/>
+            <size key="customSize" width="150" height="199"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="KIL-rM-9Zn"/>
+                    <exclude reference="Yfl-er-PV1"/>
+                    <exclude reference="9Vd-Rd-uBa"/>
+                    <exclude reference="e7g-C2-1p2"/>
+                    <exclude reference="qEm-CN-GaP"/>
+                    <exclude reference="Ikr-m3-xkv"/>
+                    <exclude reference="dij-gh-gaW"/>
+                    <exclude reference="tDb-gi-gEo"/>
+                    <exclude reference="tVV-g5-HTS"/>
+                </mask>
+            </variation>
             <connections>
                 <outlet property="costLabel" destination="lYq-Kd-YcR" id="3Nm-k7-p5J"/>
-                <outlet property="foodImageView" destination="87Q-K9-hpo" id="7Nz-VB-o4C"/>
+                <outlet property="foodImageView" destination="7Vw-ed-Ju4" id="aiY-sw-pAn"/>
                 <outlet property="healthLabel" destination="AA9-cD-820" id="5Al-gx-BD4"/>
             </connections>
-            <point key="canvasLocation" x="353" y="383"/>
+            <point key="canvasLocation" x="368" y="407"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="buy" width="916" height="316"/>
+        <image name="card-bg" width="1346" height="1679"/>
+        <image name="card-container" width="1166" height="1175"/>
+        <image name="fries_image" width="240" height="239"/>
+        <image name="heart-icon" width="190" height="175"/>
+    </resources>
 </document>

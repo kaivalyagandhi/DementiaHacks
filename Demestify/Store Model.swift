@@ -7,74 +7,75 @@
 //
 
 import UIKit
-//TODO: Add the rest of the food and clothing enums
 
 struct Food {
     var name:String!
     var cost:Int!
     var health:Int!
     
-    init(foodType:FoodTypes) {
-        switch foodType {
-        case .Sushi:
+    init(foodType:Int) {
+        switch FoodTypes[foodType] {
+        case "Sushi":
             name = "Sushi"
             cost = 2500
             health = 27
         
-        case .Corn:
+        case "Corn":
             name = "Corn"
             cost = 500
             health = 5
         
-        case .Chicken:
+        case "Chicken":
             name = "Chicken"
             cost = 2000
             health = 22
         
-        case .Pizza:
+        case "Pizza":
             name = "Pizza"
             cost = 2000
             health = 22
 
-        case .Fries:
+        case "Fries":
             name = "Fries"
             cost = 500
             health = 5
         
-        case .Bread:
+        case "Bread":
             name = "Bread"
             cost = 300
             health = 3
             
-        case .Cotton_Candy:
+        case "Cotton Candy":
             name = "Cotton Candy"
             cost = 700
             health = 8
         
-        case .Sandwich:
+        case "Sandwich":
             name = "Sandwich"
             cost = 4200
             health = 47
             
-        case .Hamburger:
+        case "Hamburger":
             name = "Hamburger"
             cost = 4000
             health = 45
             
-        case .Spaghetti:
+        case "Spaghetti":
             name = "Spaghetti"
             cost = 3000
             health = 34
             
-        case .Milkshake:
+        case "Milkshake":
             name = "Milkshake"
             cost = 300
             health = 3
 
-        case .Coffee:
+        case "Coffee":
             name = "Coffee"
             cost = 100
             health = 1
+        default:
+            break
         }
     }
 }
@@ -84,73 +85,71 @@ struct Clothing {
     var cost:Int!
     var bodyPosition:BodyPosition!
     
-    init(clothingType:ClothingTypes) {
-        switch clothingType {
-        case .Scarf:
+    init(clothingType:Int) {
+        switch ClothingTypes[clothingType] {
+        case "Scarf":
             name = "Scarf"
             cost = 5000
             bodyPosition = .Head
         
-        case .Diaper:
+        case "Diaper":
             name = "Diaper"
             cost = 6000
             bodyPosition = .Legs
         
-        case .Cape:
+        case "Cape":
             name = "Cape"
             cost = 7000
             bodyPosition = .Torso
         
-        case .Dress:
+        case "Dress":
             name = "Dress"
             cost = 12000
             bodyPosition = .Torso
         
-        case .Blouse:
-            name = "Blouse"
+        case "Suit":
+            name = "Suit"
             cost = 7000
             bodyPosition = .Torso
         
-        case .Skirt:
+        case "Skirt":
             name = "Skirt"
             cost = 7000
             bodyPosition = .Legs
         
-        case .Shirt:
+        case "Shirt":
             name = "Shirt"
             cost = 5000
             bodyPosition = .Torso
         
-        case .Toque:
+        case "Toque":
             name = "Toque"
             cost = 3500
             bodyPosition = .Head
         
-        case .HairTie:
+        case "Hair Tie":
             name = "Hair Tie"
             cost = 3000
             bodyPosition = .Head
         
-        case .Fedora:
+        case "Fedora":
             name = "Fedora"
             cost = 6500
             bodyPosition = .Head
         
-        case .EarMuffs:
+        case "Ear Muffs":
             name = "Ear Muffs"
             cost = 7500
             bodyPosition = .Head
+        default:
+            break
         }
     }
 }
 
-enum FoodTypes:Int {
-    case Sushi = 0, Corn, Chicken, Pizza, Fries, Bread, Cotton_Candy, Sandwich, Hamburger, Spaghetti, Milkshake, Coffee
-}
+let FoodTypes = ["Sushi", "Corn", "Chicken", "Pizza", "Fries", "Bread", "Cotton Candy", "Sandwich", "Hamburger", "Spaghetti", "Milkshake", "Coffee"]
 
-enum ClothingTypes {
-    case Scarf, HairTie, Fedora, EarMuffs, Toque, Shirt, Skirt, Blouse, Dress, Cape, Diaper
-}
+let ClothingTypes = ["Scarf", "Hair Tie", "Fedora", "Ear Muffs", "Toque", "Shirt", "Skirt", "Suit", "Dress", "Cape", "Diaper"]
 
 enum BodyPosition {
     case Head, Torso, Legs

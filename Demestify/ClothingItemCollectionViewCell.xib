@@ -8,45 +8,121 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ClothingItemCollectionViewCell" customModule="Demestify" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="120" height="150"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="NHZ-AP-bZw" userLabel="Clothing Item Collection View Cell" customClass="ClothingItemCollectionViewCell" customModule="Demestify" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="120" height="150"/>
+                <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PwT-Ad-a0m">
-                        <rect key="frame" x="8" y="8" width="104" height="104"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card-bg" translatesAutoresizingMaskIntoConstraints="NO" id="S0o-uW-Sd4">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                        <animations/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card-container" translatesAutoresizingMaskIntoConstraints="NO" id="rFX-RH-YpP" userLabel="Clothing Image View">
+                        <rect key="frame" x="8" y="8" width="134" height="134"/>
                         <animations/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="PwT-Ad-a0m" secondAttribute="height" multiplier="1:1" id="AsR-XC-Mm1"/>
+                            <constraint firstAttribute="width" secondItem="rFX-RH-YpP" secondAttribute="height" multiplier="104:104" id="Jn3-Ru-RPe"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1y-R1-VK5">
-                        <rect key="frame" x="42" y="121" width="36" height="21"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buy" translatesAutoresizingMaskIntoConstraints="NO" id="NeA-Ei-Mqt">
+                        <rect key="frame" x="8" y="145" width="134" height="47"/>
                         <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="NeA-Ei-Mqt" secondAttribute="height" multiplier="20:7" id="mne-k2-nMQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXI-dC-OFH">
+                        <rect key="frame" x="8" y="158.5" width="134" height="21.5"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="rjU-bP-lDz"/>
+                            <constraint firstAttribute="width" constant="124" id="tRF-lV-wCz"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
+                        <color key="shadowColor" red="0.72245896460000003" green="0.72245896460000003" blue="0.72245896460000003" alpha="0.74928737329999995" colorSpace="calibratedRGB"/>
+                        <size key="shadowOffset" width="1" height="1"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="tRF-lV-wCz"/>
+                                <exclude reference="rjU-bP-lDz"/>
+                            </mask>
+                        </variation>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="flA-En-lIt">
+                        <rect key="frame" x="125" y="0.0" width="25" height="25"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="KI7-xd-puf"/>
+                            <constraint firstAttribute="height" constant="25" id="Xzb-Bx-hhO"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suit_image" translatesAutoresizingMaskIntoConstraints="NO" id="kk5-f2-Zmz">
+                        <rect key="frame" x="17" y="16" width="117" height="117"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="kk5-f2-Zmz" secondAttribute="height" multiplier="1:1" id="Sta-mx-h36"/>
+                            <constraint firstAttribute="height" constant="117" id="jGX-Qa-Wno"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <animations/>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <animations/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="E1y-R1-VK5" firstAttribute="centerX" secondItem="PwT-Ad-a0m" secondAttribute="centerX" id="Gpv-wq-HO5"/>
-                <constraint firstItem="PwT-Ad-a0m" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="QrD-NU-ndM"/>
-                <constraint firstItem="E1y-R1-VK5" firstAttribute="top" secondItem="PwT-Ad-a0m" secondAttribute="bottom" constant="9" id="ki3-ou-1B3"/>
-                <constraint firstItem="PwT-Ad-a0m" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="lzP-Jy-pvX"/>
-                <constraint firstItem="PwT-Ad-a0m" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="zIz-lX-C3X"/>
+                <constraint firstItem="PXI-dC-OFH" firstAttribute="leading" secondItem="NeA-Ei-Mqt" secondAttribute="leading" id="3xv-tn-YYu"/>
+                <constraint firstItem="rFX-RH-YpP" firstAttribute="top" secondItem="kk5-f2-Zmz" secondAttribute="bottom" constant="-106" id="88v-Qf-W8X"/>
+                <constraint firstItem="PXI-dC-OFH" firstAttribute="trailing" secondItem="NeA-Ei-Mqt" secondAttribute="trailing" id="8T0-x4-xV9"/>
+                <constraint firstAttribute="trailing" secondItem="rFX-RH-YpP" secondAttribute="trailing" constant="8" id="AjE-LB-Y9G"/>
+                <constraint firstItem="NeA-Ei-Mqt" firstAttribute="trailing" secondItem="rFX-RH-YpP" secondAttribute="trailing" id="CgR-FL-933"/>
+                <constraint firstItem="rFX-RH-YpP" firstAttribute="leading" secondItem="NHZ-AP-bZw" secondAttribute="leading" constant="8" id="Dv4-xX-CHe"/>
+                <constraint firstAttribute="trailing" secondItem="flA-En-lIt" secondAttribute="trailing" id="Fcd-MS-v8S"/>
+                <constraint firstItem="S0o-uW-Sd4" firstAttribute="leading" secondItem="NHZ-AP-bZw" secondAttribute="leading" id="Gck-e8-dsb"/>
+                <constraint firstItem="rFX-RH-YpP" firstAttribute="top" secondItem="kk5-f2-Zmz" secondAttribute="bottom" constant="-106" id="NPA-bw-RCX"/>
+                <constraint firstItem="PXI-dC-OFH" firstAttribute="leading" secondItem="NeA-Ei-Mqt" secondAttribute="leading" id="O2M-j6-O1C"/>
+                <constraint firstItem="S0o-uW-Sd4" firstAttribute="top" secondItem="NHZ-AP-bZw" secondAttribute="top" id="QdV-Az-vYS"/>
+                <constraint firstItem="PXI-dC-OFH" firstAttribute="leading" secondItem="rFX-RH-YpP" secondAttribute="leading" id="T5h-HB-Him"/>
+                <constraint firstItem="rFX-RH-YpP" firstAttribute="top" secondItem="kk5-f2-Zmz" secondAttribute="bottom" constant="-125" id="UP7-bN-fjx"/>
+                <constraint firstItem="PXI-dC-OFH" firstAttribute="centerY" secondItem="NeA-Ei-Mqt" secondAttribute="centerY" id="VoQ-fW-tSC"/>
+                <constraint firstAttribute="bottom" secondItem="NeA-Ei-Mqt" secondAttribute="bottom" constant="8" id="XB3-Z7-EFJ"/>
+                <constraint firstItem="flA-En-lIt" firstAttribute="top" secondItem="NHZ-AP-bZw" secondAttribute="top" id="ZuX-Zu-JeC"/>
+                <constraint firstItem="NeA-Ei-Mqt" firstAttribute="centerX" secondItem="NHZ-AP-bZw" secondAttribute="centerX" id="ajk-XV-GPW"/>
+                <constraint firstAttribute="trailing" secondItem="S0o-uW-Sd4" secondAttribute="trailing" id="cau-6L-Lgc"/>
+                <constraint firstAttribute="bottom" secondItem="S0o-uW-Sd4" secondAttribute="bottom" id="e2M-GA-W7H"/>
+                <constraint firstItem="PXI-dC-OFH" firstAttribute="top" secondItem="rFX-RH-YpP" secondAttribute="bottom" constant="8" id="ewm-bj-nRk"/>
+                <constraint firstItem="PXI-dC-OFH" firstAttribute="centerY" secondItem="NeA-Ei-Mqt" secondAttribute="centerY" id="fZD-XA-m1G"/>
+                <constraint firstItem="NeA-Ei-Mqt" firstAttribute="leading" secondItem="rFX-RH-YpP" secondAttribute="leading" id="tP0-vY-S5D"/>
+                <constraint firstItem="rFX-RH-YpP" firstAttribute="top" secondItem="NHZ-AP-bZw" secondAttribute="top" constant="8" id="uak-sf-0ig"/>
+                <constraint firstItem="kk5-f2-Zmz" firstAttribute="centerX" secondItem="rFX-RH-YpP" secondAttribute="centerX" id="uwZ-g9-9BL"/>
+                <constraint firstItem="PXI-dC-OFH" firstAttribute="trailing" secondItem="NeA-Ei-Mqt" secondAttribute="trailing" id="zIU-8D-0T6"/>
             </constraints>
-            <size key="customSize" width="120" height="150"/>
+            <size key="customSize" width="150" height="199"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="88v-Qf-W8X"/>
+                    <exclude reference="NPA-bw-RCX"/>
+                    <exclude reference="3xv-tn-YYu"/>
+                    <exclude reference="VoQ-fW-tSC"/>
+                    <exclude reference="ewm-bj-nRk"/>
+                    <exclude reference="zIU-8D-0T6"/>
+                </mask>
+            </variation>
             <connections>
-                <outlet property="clothingImageView" destination="PwT-Ad-a0m" id="s5W-gv-tSB"/>
-                <outlet property="costLabel" destination="E1y-R1-VK5" id="UKE-Ad-gn8"/>
+                <outlet property="checkmarkImageView" destination="flA-En-lIt" id="qL1-Kr-Tar"/>
+                <outlet property="clothingImageView" destination="kk5-f2-Zmz" id="bnM-d9-U2y"/>
+                <outlet property="costLabel" destination="PXI-dC-OFH" id="O9S-p1-ue8"/>
             </connections>
-            <point key="canvasLocation" x="353" y="383"/>
+            <point key="canvasLocation" x="368" y="407"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="buy" width="916" height="316"/>
+        <image name="card-bg" width="1346" height="1679"/>
+        <image name="card-container" width="1166" height="1175"/>
+        <image name="checkmark" width="135" height="140"/>
+        <image name="suit_image" width="515" height="414"/>
+    </resources>
 </document>

@@ -23,10 +23,10 @@ class PetModel: NSObject {
         if petHealth == 0 {
             petHealth = 90
         }
-        /*
+        
         if let foundPurchasedClothing = NSUserDefaults.standardUserDefaults().objectForKey("purchasedClothing") {
-            purchasedClothing = foundPurchasedClothing
-        }*/
+            purchasedClothing = foundPurchasedClothing as! [Int]
+        }
     }
     
     func saveData() {
@@ -50,5 +50,7 @@ class PetModel: NSObject {
         petHealth! += byAmount
     }
     
-    //TODO: Add new Clothing
+    func purchaseClothing(item:Int) {
+        purchasedClothing.append(item)
+    }
 }

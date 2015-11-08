@@ -11,18 +11,19 @@ import UIKit
 class ClothingItemCollectionViewCell: UICollectionViewCell {
 
     var clothingItem:Clothing!
+    var own:Bool = false
     
     @IBOutlet weak var clothingImageView: UIImageView!
     @IBOutlet weak var costLabel: UILabel!
+    @IBOutlet weak var checkmarkImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
-    func configureViews() {
+    func configureCell() {
         costLabel.text = clothingItem.cost.description
-        clothingImageView.image = UIImage(named: clothingItem.name + "image")
+        clothingImageView.image = UIImage(named: clothingItem.name.lowercaseString + "_image")
+        checkmarkImageView.hidden = !own
     }
-
 }

@@ -8,8 +8,15 @@
 
 import UIKit
 
-class StoreViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+protocol StoreViewControllerDelegate {
+    func storeViewControllerDidPurchase()
+}
 
+class StoreViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    var delegate:StoreViewControllerDelegate?
+    
     @IBOutlet weak var categorySegmentedControl: UISegmentedControl!
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -25,16 +32,8 @@ class StoreViewController: UIViewController, UICollectionViewDataSource, UIColle
         self.collectionView.backgroundView?.backgroundColor = UIColor.clearColor()
     }
     
-    func purchaseClothing(item:Clothing) {
-        
-    }
-    
-    func purchaseFood(item:Food) {
-        
-    }
-    
     @IBAction func categorySegmentedControllerChanged(sender: AnyObject) {
-        
+        collectionView.reloadData()
     }
     
     //MARK: CollectionViewDelegate
@@ -43,42 +42,49 @@ class StoreViewController: UIViewController, UICollectionViewDataSource, UIColle
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-                
         if categorySegmentedControl.selectedSegmentIndex == 0 {
-             return 1
+             return FoodTypes.count
         } else if categorySegmentedControl.selectedSegmentIndex == 1 {
-            return 1
+            return ClothingTypes.count
         } else {
-            return 1
+            return 0
         }
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        
-        var cell:UICollectionViewCell!
-        
         if categorySegmentedControl.selectedSegmentIndex == 0 {
-            cell = collectionView.dequeueReusableCellWithReuseIdentifier("FoodItemCell", forIndexPath: indexPath) as? FoodItemCollectionViewCell
+            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("FoodItemCell", forIndexPath: indexPath) as? FoodItemCollectionViewCell
+            cell?.foodItem = Food(foodType: indexPath.item)
+            cell?.configureCell()
+            return cell!
+
         } else {
-            cell = collectionView.dequeueReusableCellWithReuseIdentifier("ClothingItemCell", forIndexPath: indexPath) as? ClothingItemCollectionViewCell
+            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("ClothingItemCell", forIndexPath: indexPath) as? ClothingItemCollectionViewCell
+            cell!.clothingItem = Clothing(clothingType: indexPath.item)
+            cell!.own = appDelegate.pet.purchasedClothing.contains({indexPath.item}())
+            cell?.configureCell()
+            return cell!
         }
-        
-        return cell
     }
     
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        print("tapped")
+        if categorySegmentedControl.selectedSegmentIndex == 0 && appDelegate.pet.petMoney > Food(foodType: indexPath.item).cost {
+            appDelegate.pet.incrementHealth(Food(foodType: indexPath.item).health)
+            appDelegate.pet.incrementMoney(-Food(foodType: indexPath.item).cost)
+        } else if categorySegmentedControl.selectedSegmentIndex == 1 && appDelegate.pet.petMoney > Clothing(clothingType: indexPath.item).cost && appDelegate.pet.purchasedClothing.contains({indexPath.item}()) == false {
+            appDelegate.pet.purchaseClothing(indexPath.item)
+            appDelegate.pet.incrementMoney(-Clothing(clothingType: indexPath.item).cost)
+            collectionView.reloadItemsAtIndexPaths([NSIndexPath(forItem: indexPath.item, inSection: 0)])
+        } else {
+            return
+        }
+        if delegate != nil {
+            delegate?.storeViewControllerDidPurchase()
+        }
+    }
     
     @IBAction func closeItemTapped(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
-    }
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
-
 }
