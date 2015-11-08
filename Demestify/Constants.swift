@@ -21,3 +21,12 @@ let PF_ANAGRAM_TIME = "time" //Float
 let PF_ANAGRAM_HINTS = "hints" //Int
 let PF_ANAGRAM_COMPLETED = "completed" //Bool
 
+
+let pieceName = "Pieces98"
+struct Layer {
+    static let Background   : CGFloat = 1
+    static let GuidePhoto   : CGFloat = 2
+    static let Tiles        : CGFloat = 3
+    static let MenuItems    : CGFloat = 4
+    static let MovingPiece  : CGFloat = 5
+}

@@ -22,6 +22,13 @@
 		FA05EAD01BEFC81D00AD1184 /* 4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA05EACE1BEFC81D00AD1184 /* 4.jpeg */; };
 		FA05EAD11BEFC81D00AD1184 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA05EACF1BEFC81D00AD1184 /* 6.jpg */; };
 		FA05EAF01BEFD01600AD1184 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05EAEF1BEFD01600AD1184 /* ImageCollectionViewCell.swift */; };
+		FA05EAF91BEFD5FE00AD1184 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05EAF21BEFD5FE00AD1184 /* Enums.swift */; };
+		FA05EAFA1BEFD5FE00AD1184 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05EAF31BEFD5FE00AD1184 /* Extensions.swift */; };
+		FA05EAFB1BEFD5FE00AD1184 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FA05EAF41BEFD5FE00AD1184 /* GameScene.sks */; };
+		FA05EAFC1BEFD5FE00AD1184 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05EAF51BEFD5FE00AD1184 /* GameViewController.swift */; };
+		FA05EAFD1BEFD5FE00AD1184 /* JigsawPuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05EAF61BEFD5FE00AD1184 /* JigsawPuzzle.swift */; };
+		FA05EAFE1BEFD5FE00AD1184 /* PuzzleBeziers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05EAF71BEFD5FE00AD1184 /* PuzzleBeziers.swift */; };
+		FA05EAFF1BEFD5FE00AD1184 /* SlidingPuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05EAF81BEFD5FE00AD1184 /* SlidingPuzzle.swift */; };
 		FA32047F1BEE3BB6007CE6E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32047E1BEE3BB6007CE6E6 /* AppDelegate.swift */; };
 		FA3204811BEE3BB6007CE6E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3204801BEE3BB6007CE6E6 /* ViewController.swift */; };
 		FA3204841BEE3BB6007CE6E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3204821BEE3BB6007CE6E6 /* Main.storyboard */; };
@@ -137,6 +144,13 @@
 		FA05EACE1BEFC81D00AD1184 /* 4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpeg; sourceTree = "<group>"; };
 		FA05EACF1BEFC81D00AD1184 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
 		FA05EAEF1BEFD01600AD1184 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA05EAF21BEFD5FE00AD1184 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		FA05EAF31BEFD5FE00AD1184 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FA05EAF41BEFD5FE00AD1184 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		FA05EAF51BEFD5FE00AD1184 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		FA05EAF61BEFD5FE00AD1184 /* JigsawPuzzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JigsawPuzzle.swift; sourceTree = "<group>"; };
+		FA05EAF71BEFD5FE00AD1184 /* PuzzleBeziers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleBeziers.swift; sourceTree = "<group>"; };
+		FA05EAF81BEFD5FE00AD1184 /* SlidingPuzzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidingPuzzle.swift; sourceTree = "<group>"; };
 		FA32047B1BEE3BB6007CE6E6 /* Demestify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demestify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA32047E1BEE3BB6007CE6E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA3204801BEE3BB6007CE6E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -305,6 +319,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FA05EAF11BEFD5D100AD1184 /* Jigsaw */ = {
+			isa = PBXGroup;
+			children = (
+				FA05EAF21BEFD5FE00AD1184 /* Enums.swift */,
+				FA05EAF31BEFD5FE00AD1184 /* Extensions.swift */,
+				FA05EAF41BEFD5FE00AD1184 /* GameScene.sks */,
+				FA05EAF51BEFD5FE00AD1184 /* GameViewController.swift */,
+				FA05EAF61BEFD5FE00AD1184 /* JigsawPuzzle.swift */,
+				FA05EAF71BEFD5FE00AD1184 /* PuzzleBeziers.swift */,
+				FA05EAF81BEFD5FE00AD1184 /* SlidingPuzzle.swift */,
+			);
+			name = Jigsaw;
+			sourceTree = "<group>";
+		};
 		FA3204721BEE3BB5007CE6E6 = {
 			isa = PBXGroup;
 			children = (
@@ -332,6 +360,7 @@
 			children = (
 				FA3204821BEE3BB6007CE6E6 /* Main.storyboard */,
 				FA3204801BEE3BB6007CE6E6 /* ViewController.swift */,
+				FA05EAF11BEFD5D100AD1184 /* Jigsaw */,
 				FAAFA5B91BEF855700CC408B /* Anagram */,
 				FA3204D91BEE62AA007CE6E6 /* Caregiver's Module */,
 				FA3204E01BEE7916007CE6E6 /* Store VC */,
@@ -639,6 +668,7 @@
 				FA05EACC1BEFC80D00AD1184 /* menu-display.mp3 in Resources */,
 				FA05EABB1BEFBE9300AD1184 /* level1.plist in Resources */,
 				FA05EABC1BEFBE9300AD1184 /* level2.plist in Resources */,
+				FA05EAFB1BEFD5FE00AD1184 /* GameScene.sks in Resources */,
 				FAAFA59D1BEF83B300CC408B /* win.mp3 in Resources */,
 				FAAFA57C1BEE9B0F00CC408B /* ClothingItemCollectionViewCell.xib in Resources */,
 				FA05EAC81BEFC80D00AD1184 /* eating.mp3 in Resources */,
@@ -730,6 +760,7 @@
 				FA7BE53B1BEE88F6005C314B /* MZFormSheetContentSizingNavigationController.m in Sources */,
 				FAAFA57B1BEE9B0F00CC408B /* ClothingItemCollectionViewCell.swift in Sources */,
 				FAAFA5B31BEF855000CC408B /* HUDView.swift in Sources */,
+				FA05EAFE1BEFD5FE00AD1184 /* PuzzleBeziers.swift in Sources */,
 				FAAFA5B81BEF855000CC408B /* TileView.swift in Sources */,
 				FAAFA5B11BEF855000CC408B /* GameController.swift in Sources */,
 				FAAFA5B01BEF855000CC408B /* ExplodeView.swift in Sources */,
@@ -744,10 +775,15 @@
 				FA7BE5401BEE88F6005C314B /* MZFormSheetPresentationViewControllerInteractiveAnimator.m in Sources */,
 				FAAFA5AC1BEF855000CC408B /* AnagramViewController.swift in Sources */,
 				FA05EAF01BEFD01600AD1184 /* ImageCollectionViewCell.swift in Sources */,
+				FA05EAF91BEFD5FE00AD1184 /* Enums.swift in Sources */,
 				FAAFA5811BEECD7200CC408B /* AnagramModel.swift in Sources */,
+				FA05EAFA1BEFD5FE00AD1184 /* Extensions.swift in Sources */,
+				FA05EAFD1BEFD5FE00AD1184 /* JigsawPuzzle.swift in Sources */,
 				FA7BE53D1BEE88F6005C314B /* MZFormSheetPresentationController.m in Sources */,
+				FA05EAFF1BEFD5FE00AD1184 /* SlidingPuzzle.swift in Sources */,
 				FAAFA5B51BEF855000CC408B /* StardustView.swift in Sources */,
 				FAAFA5AE1BEF855000CC408B /* Config.swift in Sources */,
+				FA05EAFC1BEFD5FE00AD1184 /* GameViewController.swift in Sources */,
 				FA7BE5431BEE88F6005C314B /* MZTransition.m in Sources */,
 				FAAFA5771BEE9B0000CC408B /* FoodItemCollectionViewCell.swift in Sources */,
 				FAAFA5B61BEF855000CC408B /* StopwatchView.swift in Sources */,

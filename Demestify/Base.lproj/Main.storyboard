@@ -177,6 +177,7 @@
                         <segue destination="MhD-wC-UNz" kind="presentation" identifier="presentStoreFormSegue" modalPresentationStyle="formSheet" id="WL0-TT-IUj"/>
                         <segue destination="V4X-Sx-47g" kind="presentation" identifier="presentCaregiverSegue" id="xOx-zU-3eX"/>
                         <segue destination="hUt-zP-WLw" kind="presentation" identifier="presentAnagramSegue" animates="NO" id="TiX-hV-0Xx"/>
+                        <segue destination="Wh5-SG-8le" kind="presentation" identifier="presentJigsawSegue" id="0dz-M2-nVz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -213,6 +214,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QPN-aj-4mc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1010" y="-614"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="nHY-AI-Yex">
+            <objects>
+                <viewController id="Wh5-SG-8le" customClass="GameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vi9-i1-hP8"/>
+                        <viewControllerLayoutGuide type="bottom" id="u4a-Ax-al2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uos-eJ-ava">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bvh-sV-iEP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1684" y="-581"/>
         </scene>
         <!--Store View Controller-->
         <scene sceneID="Xh4-0X-hbK">
