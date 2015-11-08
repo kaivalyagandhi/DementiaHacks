@@ -46,8 +46,8 @@
                         <size key="shadowOffset" width="1" height="1"/>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="tRF-lV-wCz"/>
                                 <exclude reference="rjU-bP-lDz"/>
+                                <exclude reference="tRF-lV-wCz"/>
                             </mask>
                         </variation>
                     </label>

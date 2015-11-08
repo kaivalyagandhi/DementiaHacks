@@ -42,17 +42,13 @@ class GameController {
   }
     
     func randomStringWithLength(anagramToJumble : String) -> String {
-        let letters : NSString = anagramToJumble;
+        let letters : String = anagramToJumble;
         
-        let randomString : NSMutableString = NSMutableString(capacity: letters.length)
+        //let randomString : NSMutableString = NSMutableString(capacity: letters.length)
+        var a = Array(letters.characters)
+        a.shuffle()
+        return String(a)
         
-        for (var i=0; i < letters.length; i++){
-            let length = UInt32 (letters.length)
-            let rand = arc4random_uniform(length)
-            randomString.appendFormat("%C", letters.characterAtIndex(Int(rand)))
-        }
-        
-        return String(randomString)
     }
   
   func dealRandomAnagram () {
@@ -331,6 +327,7 @@ extension GameController:TileDragDelegateProtocol {
         //give points
         data.points += level.pointsPerTile
         hud.gamePoints.setValue(data.points, duration: 0.5)
+        appDelegate.pet.incrementMoney(level.pointsPerTile*100)
         
         //check for finished game
         self.checkForSuccess()
@@ -360,6 +357,15 @@ extension GameController:TileDragDelegateProtocol {
         hud.gamePoints.setValue(data.points, duration: 0.25)
       }
     }
-    
   }
+}
+
+extension Array {
+    mutating func shuffle() {
+        for i in 0..<(count - 1) {
+            let j = Int(arc4random_uniform(UInt32(count - i))) + i
+            guard i != j else { continue}
+            swap(&self[i], &self[j])
+        }
+    }
 }

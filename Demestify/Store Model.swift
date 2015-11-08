@@ -90,7 +90,7 @@ struct Clothing {
         case "Scarf":
             name = "Scarf"
             cost = 5000
-            bodyPosition = .Head
+            bodyPosition = .Torso
         
         case "Diaper":
             name = "Diaper"
