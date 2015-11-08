@@ -48,6 +48,11 @@ class AnagramStore: NSObject, NSCoding {
     func deleteAnagramAtIndex(index:Int) {
         anagrams.removeAtIndex(index)
     }
+    
+    func addAnagram(question:String, answer:String) {
+        let newAnagram = AnagramModel(answer: answer, question: question)
+        self.anagrams.insert(newAnagram, atIndex: 0)
+    }
 }
 
 class AnagramModel: NSObject, NSCoding {

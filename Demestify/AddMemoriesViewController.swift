@@ -28,7 +28,15 @@ class AddMemoriesViewController: UIViewController, UITextViewDelegate, UITextFie
         questionTextView.delegate = self
         answerTextField.delegate = self
         
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        self.view.addGestureRecognizer(tapGestureRecognizer)
+        
         configureViews()
+    }
+    
+    func dismissKeyboard() {
+        questionTextView.resignFirstResponder()
+        answerTextField.resignFirstResponder()
     }
     
     func configureViews() {
@@ -59,6 +67,10 @@ class AddMemoriesViewController: UIViewController, UITextViewDelegate, UITextFie
         
     }
     
+    @IBAction func submitButtonTapped(sender: AnyObject) {
+        //TODO: Add anagram
+        appDelegate.anagramManager.addAnagram(questionTextView.text, answer: answerTextField.text!)
+    }
     func textViewShouldBeginEditing(textView: UITextView) -> Bool {
         if textView.text == "Question Here" {
             textView.text = ""
@@ -76,6 +88,11 @@ class AddMemoriesViewController: UIViewController, UITextViewDelegate, UITextFie
     }
     
     func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+        if text == "\n" {
+            textView.resignFirstResponder()
+            return false
+        }
+        
         if range.length >= 20 && strcmp(text.cStringUsingEncoding(NSUTF8StringEncoding)!,"\\b") != -92 {
             return false
         }
