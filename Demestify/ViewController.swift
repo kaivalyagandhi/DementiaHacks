@@ -29,7 +29,7 @@ class ViewController: UIViewController, StoreViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViews()
-        
+        configureClothing()
         if PFUser.currentUser() == nil {
             enableAllButtons(false)
             PFAnonymousUtils.logInWithBlock({ (user, error) -> Void in
@@ -86,13 +86,39 @@ class ViewController: UIViewController, StoreViewControllerDelegate {
         }
     }
     
-    func configurePetImageView() {
-        
-        let rand = arc4random_uniform(6)
+    func animateEating() {
+        let feeling = "chew"
         
         var animImages:[UIImage] = []
-        for idx in 1..<9 {
-            animImages.append(UIImage(named: "\(petAnimations[Int(rand)])-\(idx.description)")!)
+        for idx in 1..<10 {
+            animImages.append(UIImage(named: "\(feeling)-\(idx.description)")!)
+        }
+        
+        petImageView.animationImages = animImages
+        petImageView.animationRepeatCount = 3
+        petImageView.animationDuration = 0.9
+        petImageView.startAnimating()
+        self.performSelector("resetPetImageView", withObject: nil, afterDelay: 0.9)
+    }
+    
+    func configurePetImageView() {
+        var feeling:String!
+        switch appDelegate.pet.petHealth! {
+        case 0..<30:
+            feeling = "supersad"
+        case 30..<60:
+            feeling = "sad"
+        case 60..<80:
+            feeling = "okay"
+        case 80..<100:
+            feeling = "happy"
+        default:
+            feeling = "okay"
+        }
+        
+        var animImages:[UIImage] = []
+        for idx in 1...10 {
+            animImages.append(UIImage(named: "\(feeling)-\(idx.description)")!)
         }
         
         petImageView.animationImages = animImages
@@ -108,7 +134,42 @@ class ViewController: UIViewController, StoreViewControllerDelegate {
         self.performSelector("configurePetImageView", withObject: nil, afterDelay: 3)
     }
     
+    func configureClothing() {
+        let headTapRecognizer = UITapGestureRecognizer(target: self, action: "toggleClothingHead:")
+        headClothingImage.addGestureRecognizer(headTapRecognizer)
+        let torsoTapRecognizer = UITapGestureRecognizer(target: self, action: "toggleClothingTorso:")
+        torsoClothingImage.addGestureRecognizer(torsoTapRecognizer)
+        headClothingImage.image = nil
+        torsoClothingImage.image = nil
+    }
     
+    func toggleClothingHead(gesture:UITapGestureRecognizer) {
+        print("toggle head")
+        var allClothing:[Clothing] = []
+        for idx in 0..<ClothingTypes.count {
+            allClothing.append(Clothing(clothingType: idx))
+        }
+        
+        let filteredClothing = allClothing.filter({$0.bodyPosition == BodyPosition.Head})
+        
+        let idx = arc4random_uniform(UInt32(filteredClothing.count))
+        let image = UIImage(named: filteredClothing[Int(idx)].name.lowercaseString + "_image")
+        headClothingImage.image = image
+    }
+    
+    func toggleClothingTorso(gesture:UITapGestureRecognizer) {
+        var allClothing:[Clothing] = []
+        for idx in 0..<ClothingTypes.count {
+            allClothing.append(Clothing(clothingType: idx))
+        }
+        
+        let filteredClothing = allClothing.filter({$0.bodyPosition == BodyPosition.Torso})
+        
+        let idx = arc4random_uniform(UInt32(filteredClothing.count))
+        let image = UIImage(named: filteredClothing[Int(idx)].name.lowercaseString + "_image")
+        print(filteredClothing[Int(idx)].name.lowercaseString + "-image")
+        torsoClothingImage.image = image
+    }
     
     //MARK: Buttons
     @IBAction func healthButtonTapped(sender: AnyObject) {
@@ -143,10 +204,11 @@ class ViewController: UIViewController, StoreViewControllerDelegate {
     }
     
     //StoreViewController Delegate
-    func storeViewControllerDidPurchase() {
+    func storeViewControllerDidPurchaseFood() {
         self.dismissViewControllerAnimated(true) { () -> Void in
             self.animateMoneyLabel()
             self.animateHealthBar()
+            self.animateEating()
         }
     }
 }

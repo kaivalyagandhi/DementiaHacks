@@ -64,12 +64,12 @@ class AddMemoriesViewController: UIViewController, UITextViewDelegate, UITextFie
     }
     
     func configureSubmitButton() {
-        
+        submitButton.enabled = false
     }
     
     @IBAction func submitButtonTapped(sender: AnyObject) {
-        //TODO: Add anagram
         appDelegate.anagramManager.addAnagram(questionTextView.text, answer: answerTextField.text!)
+        tableView.insertRowsAtIndexPaths([NSIndexPath(forItem: 0, inSection: 0)], withRowAnimation: .Left)
     }
     func textViewShouldBeginEditing(textView: UITextView) -> Bool {
         if textView.text == "Question Here" {
@@ -84,7 +84,6 @@ class AddMemoriesViewController: UIViewController, UITextViewDelegate, UITextFie
         configureCharactersRemainingLabel()
         submitButton.enabled = textField.text?.utf8.count > 3
         return true
-            
     }
     
     func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {

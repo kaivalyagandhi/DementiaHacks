@@ -16,6 +16,8 @@ class GameController {
   private var tiles = [TileView]()
   private var targets = [TargetView]()
   
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    
   var hud:HUDView! {
     didSet {
       //connect the Hint button
@@ -39,7 +41,7 @@ class GameController {
     self.audioController.preloadAudioEffects(AudioEffectFiles)
   }
     
-    func randomStringWithLength(anagramToJumble : String) -> NSString{
+    func randomStringWithLength(anagramToJumble : String) -> String {
         let letters : NSString = anagramToJumble;
         
         let randomString : NSMutableString = NSMutableString(capacity: letters.length)
@@ -50,7 +52,7 @@ class GameController {
             randomString.appendFormat("%C", letters.characterAtIndex(Int(rand)))
         }
         
-        return randomString
+        return String(randomString)
     }
   
   func dealRandomAnagram () {
@@ -59,18 +61,18 @@ class GameController {
     
     //2
     let randomIndex = randomNumber(minX:0, maxX:UInt32(level.anagrams.count-1))
-    let anagramPair = level.anagrams[randomIndex]
+    let anagramPair = appDelegate.anagramManager.anagrams[randomIndex]
     
     //3
-    let anagram1 = anagramPair[0] as! String
-    let anagram2 = anagramPair[1] as! String
-    let anagram3 = anagramPair[2] as! String
+    let anagram1 = anagramPair.answer
+    let anagram2 = randomStringWithLength(anagram1!)
+    let anagram3 = anagramPair.question
     
     //4
    
-    let anagram1length = anagram1.characters.count
+    let anagram1length = anagram1!.characters.count
     let anagram2length = anagram2.characters.count
-    let anagram3length = anagram3.characters.count
+    let anagram3length = anagram3!.characters.count
     
     //5
     print("phrase1[\(anagram1length)]: \(anagram1)")
@@ -103,7 +105,7 @@ class GameController {
     tiles = []
     
     //2 create tiles
-    for (index, letter) in anagram1.characters.enumerate() {
+    for (index, letter) in anagram1!.characters.enumerate() {
       //3
       if letter != " " {
         let tile = TileView(letter: letter, sideLength: tileSide)
@@ -360,6 +362,4 @@ extension GameController:TileDragDelegateProtocol {
     }
     
   }
-  
-
 }

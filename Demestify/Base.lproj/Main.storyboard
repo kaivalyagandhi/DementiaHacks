@@ -48,8 +48,8 @@
                                     <action selector="moneyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zrt-Kc-Rt7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4B-Hw-BfH">
-                                <rect key="frame" x="195.5" y="270" width="377" height="120"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4B-Hw-BfH">
+                                <rect key="frame" x="195.5" y="131" width="377" height="120"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="O4B-Hw-BfH" secondAttribute="height" multiplier="1189:379" id="XBi-mt-tEb"/>
@@ -105,14 +105,14 @@
                                     <constraint firstAttribute="width" secondItem="jwt-dJ-49N" secondAttribute="height" multiplier="333:500" constant="46.613999999999976" id="ZyJ-PC-3R4"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fedora_image" translatesAutoresizingMaskIntoConstraints="NO" id="rTd-6a-AP0">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fedora_image" translatesAutoresizingMaskIntoConstraints="NO" id="rTd-6a-AP0">
                                 <rect key="frame" x="278" y="490" width="213" height="176.5"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="rTd-6a-AP0" secondAttribute="height" multiplier="41:34" id="sGV-LI-GtF"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suit_image" translatesAutoresizingMaskIntoConstraints="NO" id="Auo-0H-hUD">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suit_image" translatesAutoresizingMaskIntoConstraints="NO" id="Auo-0H-hUD">
                                 <rect key="frame" x="131" y="723" width="506" height="301"/>
                                 <animations/>
                                 <constraints>
@@ -150,7 +150,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Bap-Jp-9On" secondAttribute="trailing" id="l18-BD-xlp"/>
                             <constraint firstItem="Z4z-h5-XnW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="qmo-R3-jes"/>
                             <constraint firstItem="I6m-QO-SCq" firstAttribute="top" secondItem="Bap-Jp-9On" secondAttribute="bottom" constant="8" id="t0i-bR-3VH"/>
-                            <constraint firstItem="O4B-Hw-BfH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="250" id="uii-ew-zga"/>
+                            <constraint firstItem="O4B-Hw-BfH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="uii-ew-zga"/>
                             <constraint firstItem="Auo-0H-hUD" firstAttribute="top" secondItem="jwt-dJ-49N" secondAttribute="bottom" constant="-281" id="v6V-Ra-goB"/>
                             <constraint firstItem="9T3-RI-HTi" firstAttribute="top" secondItem="Bap-Jp-9On" secondAttribute="top" id="vQa-m0-wuX"/>
                         </constraints>

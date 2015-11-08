@@ -9,7 +9,7 @@
 import UIKit
 
 protocol StoreViewControllerDelegate {
-    func storeViewControllerDidPurchase()
+    func storeViewControllerDidPurchaseFood()
 }
 
 class StoreViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
@@ -72,6 +72,9 @@ class StoreViewController: UIViewController, UICollectionViewDataSource, UIColle
         if categorySegmentedControl.selectedSegmentIndex == 0 && appDelegate.pet.petMoney > Food(foodType: indexPath.item).cost {
             appDelegate.pet.incrementHealth(Food(foodType: indexPath.item).health)
             appDelegate.pet.incrementMoney(-Food(foodType: indexPath.item).cost)
+            if delegate != nil {
+                delegate?.storeViewControllerDidPurchaseFood()
+            }
         } else if categorySegmentedControl.selectedSegmentIndex == 1 && appDelegate.pet.petMoney > Clothing(clothingType: indexPath.item).cost && appDelegate.pet.purchasedClothing.contains({indexPath.item}()) == false {
             appDelegate.pet.purchaseClothing(indexPath.item)
             appDelegate.pet.incrementMoney(-Clothing(clothingType: indexPath.item).cost)
@@ -79,12 +82,9 @@ class StoreViewController: UIViewController, UICollectionViewDataSource, UIColle
         } else {
             return
         }
-        if delegate != nil {
-            delegate?.storeViewControllerDidPurchase()
-        }
     }
     
     @IBAction func closeItemTapped(sender: AnyObject) {
-
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 }
