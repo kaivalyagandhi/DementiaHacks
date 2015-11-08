@@ -68,6 +68,27 @@
 		FAAFA5901BEF207200CC408B /* CarterOne.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAAFA5891BEF207200CC408B /* CarterOne.ttf */; };
 		FAAFA5921BEF2EB700CC408B /* AddMemoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFA5911BEF2EB700CC408B /* AddMemoriesViewController.swift */; };
 		FAAFA5941BEF361700CC408B /* AnagramTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFA5931BEF361700CC408B /* AnagramTableViewCell.swift */; };
+		FAAFA59A1BEF83B300CC408B /* Carter_One.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAAFA5951BEF83B300CC408B /* Carter_One.ttf */; };
+		FAAFA59B1BEF83B300CC408B /* Comic_Andy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAAFA5961BEF83B300CC408B /* Comic_Andy.ttf */; };
+		FAAFA59C1BEF83B300CC408B /* ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FAAFA5971BEF83B300CC408B /* ding.mp3 */; };
+		FAAFA59D1BEF83B300CC408B /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FAAFA5981BEF83B300CC408B /* win.mp3 */; };
+		FAAFA59E1BEF83B300CC408B /* wrong.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FAAFA5991BEF83B300CC408B /* wrong.m4a */; };
+		FAAFA5AC1BEF855000CC408B /* AnagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFA59F1BEF854F00CC408B /* AnagramViewController.swift */; };
+		FAAFA5AD1BEF855000CC408B /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFA5A01BEF854F00CC408B /* AudioController.swift */; };
+		FAAFA5AE1BEF855000CC408B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFA5A11BEF854F00CC408B /* Config.swift */; };
+		FAAFA5AF1BEF855000CC408B /* CounterLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFA5A21BEF854F00CC408B /* CounterLabelView.swift */; };
+		FAAFA5B01BEF855000CC408B /* ExplodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFA5A31BEF854F00CC408B /* ExplodeView.swift */; };
+		FAAFA5B11BEF855000CC408B /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFA5A41BEF854F00CC408B /* GameController.swift */; };
+		FAAFA5B21BEF855000CC408B /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFA5A51BEF854F00CC408B /* GameData.swift */; };
+		FAAFA5B31BEF855000CC408B /* HUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFA5A61BEF854F00CC408B /* HUDView.swift */; };
+		FAAFA5B41BEF855000CC408B /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFA5A71BEF854F00CC408B /* Level.swift */; };
+		FAAFA5B51BEF855000CC408B /* StardustView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFA5A81BEF854F00CC408B /* StardustView.swift */; };
+		FAAFA5B61BEF855000CC408B /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFA5A91BEF854F00CC408B /* StopwatchView.swift */; };
+		FAAFA5B71BEF855000CC408B /* TargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFA5AA1BEF854F00CC408B /* TargetView.swift */; };
+		FAAFA5B81BEF855000CC408B /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFA5AB1BEF854F00CC408B /* TileView.swift */; };
+		FAAFA5BD1BEF85F100CC408B /* level1.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAAFA5BA1BEF85F100CC408B /* level1.plist */; };
+		FAAFA5BE1BEF85F100CC408B /* level2.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAAFA5BB1BEF85F100CC408B /* level2.plist */; };
+		FAAFA5BF1BEF85F100CC408B /* level3.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAAFA5BC1BEF85F100CC408B /* level3.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -173,6 +194,27 @@
 		FAAFA5891BEF207200CC408B /* CarterOne.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CarterOne.ttf; sourceTree = "<group>"; };
 		FAAFA5911BEF2EB700CC408B /* AddMemoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMemoriesViewController.swift; sourceTree = "<group>"; };
 		FAAFA5931BEF361700CC408B /* AnagramTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnagramTableViewCell.swift; sourceTree = "<group>"; };
+		FAAFA5951BEF83B300CC408B /* Carter_One.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Carter_One.ttf; sourceTree = "<group>"; };
+		FAAFA5961BEF83B300CC408B /* Comic_Andy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Comic_Andy.ttf; sourceTree = "<group>"; };
+		FAAFA5971BEF83B300CC408B /* ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ding.mp3; sourceTree = "<group>"; };
+		FAAFA5981BEF83B300CC408B /* win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = win.mp3; sourceTree = "<group>"; };
+		FAAFA5991BEF83B300CC408B /* wrong.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wrong.m4a; sourceTree = "<group>"; };
+		FAAFA59F1BEF854F00CC408B /* AnagramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnagramViewController.swift; sourceTree = "<group>"; };
+		FAAFA5A01BEF854F00CC408B /* AudioController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
+		FAAFA5A11BEF854F00CC408B /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		FAAFA5A21BEF854F00CC408B /* CounterLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterLabelView.swift; sourceTree = "<group>"; };
+		FAAFA5A31BEF854F00CC408B /* ExplodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplodeView.swift; sourceTree = "<group>"; };
+		FAAFA5A41BEF854F00CC408B /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		FAAFA5A51BEF854F00CC408B /* GameData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
+		FAAFA5A61BEF854F00CC408B /* HUDView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUDView.swift; sourceTree = "<group>"; };
+		FAAFA5A71BEF854F00CC408B /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		FAAFA5A81BEF854F00CC408B /* StardustView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StardustView.swift; sourceTree = "<group>"; };
+		FAAFA5A91BEF854F00CC408B /* StopwatchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
+		FAAFA5AA1BEF854F00CC408B /* TargetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetView.swift; sourceTree = "<group>"; };
+		FAAFA5AB1BEF854F00CC408B /* TileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
+		FAAFA5BA1BEF85F100CC408B /* level1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level1.plist; sourceTree = "<group>"; };
+		FAAFA5BB1BEF85F100CC408B /* level2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level2.plist; sourceTree = "<group>"; };
+		FAAFA5BC1BEF85F100CC408B /* level3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level3.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +310,7 @@
 			children = (
 				FA3204821BEE3BB6007CE6E6 /* Main.storyboard */,
 				FA3204801BEE3BB6007CE6E6 /* ViewController.swift */,
+				FAAFA5B91BEF855700CC408B /* Anagram */,
 				FA3204D91BEE62AA007CE6E6 /* Caregiver's Module */,
 				FA3204E01BEE7916007CE6E6 /* Store VC */,
 				FAAFA5821BEED97E00CC408B /* Models */,
@@ -390,6 +433,11 @@
 		FAAFA57D1BEEA7ED00CC408B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FAAFA5951BEF83B300CC408B /* Carter_One.ttf */,
+				FAAFA5961BEF83B300CC408B /* Comic_Andy.ttf */,
+				FAAFA5971BEF83B300CC408B /* ding.mp3 */,
+				FAAFA5981BEF83B300CC408B /* win.mp3 */,
+				FAAFA5991BEF83B300CC408B /* wrong.m4a */,
 				FA32047E1BEE3BB6007CE6E6 /* AppDelegate.swift */,
 				FA3204851BEE3BB6007CE6E6 /* Assets.xcassets */,
 				FA32048A1BEE3BB6007CE6E6 /* Info.plist */,
@@ -406,6 +454,29 @@
 				FAAFA5801BEECD7200CC408B /* AnagramModel.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		FAAFA5B91BEF855700CC408B /* Anagram */ = {
+			isa = PBXGroup;
+			children = (
+				FAAFA59F1BEF854F00CC408B /* AnagramViewController.swift */,
+				FAAFA5A01BEF854F00CC408B /* AudioController.swift */,
+				FAAFA5A11BEF854F00CC408B /* Config.swift */,
+				FAAFA5A21BEF854F00CC408B /* CounterLabelView.swift */,
+				FAAFA5A31BEF854F00CC408B /* ExplodeView.swift */,
+				FAAFA5A41BEF854F00CC408B /* GameController.swift */,
+				FAAFA5A51BEF854F00CC408B /* GameData.swift */,
+				FAAFA5A61BEF854F00CC408B /* HUDView.swift */,
+				FAAFA5A71BEF854F00CC408B /* Level.swift */,
+				FAAFA5A81BEF854F00CC408B /* StardustView.swift */,
+				FAAFA5A91BEF854F00CC408B /* StopwatchView.swift */,
+				FAAFA5AA1BEF854F00CC408B /* TargetView.swift */,
+				FAAFA5AB1BEF854F00CC408B /* TileView.swift */,
+				FAAFA5BA1BEF85F100CC408B /* level1.plist */,
+				FAAFA5BB1BEF85F100CC408B /* level2.plist */,
+				FAAFA5BC1BEF85F100CC408B /* level3.plist */,
+			);
+			name = Anagram;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -515,13 +586,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAAFA5BF1BEF85F100CC408B /* level3.plist in Resources */,
 				FAAFA58A1BEF207200CC408B /* AveriaSansLibre-Bold.ttf in Resources */,
 				FAAFA58F1BEF207200CC408B /* AveriaSansLibre-Regular.ttf in Resources */,
 				FAAFA58B1BEF207200CC408B /* AveriaSansLibre-BoldItalic.ttf in Resources */,
 				FA3205581BEE8148007CE6E6 /* Podfile in Resources */,
+				FAAFA59E1BEF83B300CC408B /* wrong.m4a in Resources */,
+				FAAFA59B1BEF83B300CC408B /* Comic_Andy.ttf in Resources */,
+				FAAFA59A1BEF83B300CC408B /* Carter_One.ttf in Resources */,
 				FAAFA5901BEF207200CC408B /* CarterOne.ttf in Resources */,
 				FA3204891BEE3BB6007CE6E6 /* LaunchScreen.storyboard in Resources */,
+				FAAFA59C1BEF83B300CC408B /* ding.mp3 in Resources */,
 				FA3204861BEE3BB6007CE6E6 /* Assets.xcassets in Resources */,
+				FAAFA5BD1BEF85F100CC408B /* level1.plist in Resources */,
+				FAAFA5BE1BEF85F100CC408B /* level2.plist in Resources */,
+				FAAFA59D1BEF83B300CC408B /* win.mp3 in Resources */,
 				FAAFA57C1BEE9B0F00CC408B /* ClothingItemCollectionViewCell.xib in Resources */,
 				FAAFA5781BEE9B0000CC408B /* FoodItemCollectionViewCell.xib in Resources */,
 				FAAFA58D1BEF207200CC408B /* AveriaSansLibre-Light.ttf in Resources */,
@@ -600,29 +679,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAAFA5B41BEF855000CC408B /* Level.swift in Sources */,
 				FA3204811BEE3BB6007CE6E6 /* ViewController.swift in Sources */,
 				FAAFA5741BEE8D6500CC408B /* Parse Helper.swift in Sources */,
 				FA7BE53E1BEE88F6005C314B /* MZFormSheetPresentationViewController.m in Sources */,
 				FA3204D71BEE624D007CE6E6 /* AddPhotosViewController.swift in Sources */,
 				FA7BE53B1BEE88F6005C314B /* MZFormSheetContentSizingNavigationController.m in Sources */,
 				FAAFA57B1BEE9B0F00CC408B /* ClothingItemCollectionViewCell.swift in Sources */,
+				FAAFA5B31BEF855000CC408B /* HUDView.swift in Sources */,
+				FAAFA5B81BEF855000CC408B /* TileView.swift in Sources */,
+				FAAFA5B11BEF855000CC408B /* GameController.swift in Sources */,
+				FAAFA5B01BEF855000CC408B /* ExplodeView.swift in Sources */,
 				FA7BE5441BEE88F6005C314B /* UIViewController+TargetViewController.m in Sources */,
 				FA7BE53C1BEE88F6005C314B /* MZFormSheetContentSizingNavigationControllerAnimator.m in Sources */,
+				FAAFA5AF1BEF855000CC408B /* CounterLabelView.swift in Sources */,
 				FA7BE53A1BEE88F6005C314B /* MZBlurEffectAdapter.m in Sources */,
 				FA3204DC1BEE6EFC007CE6E6 /* StoreViewController.swift in Sources */,
 				FA7BE53F1BEE88F6005C314B /* MZFormSheetPresentationViewControllerAnimator.m in Sources */,
 				FAAFA57F1BEECA2400CC408B /* ImageModel.swift in Sources */,
 				FA32047F1BEE3BB6007CE6E6 /* AppDelegate.swift in Sources */,
 				FA7BE5401BEE88F6005C314B /* MZFormSheetPresentationViewControllerInteractiveAnimator.m in Sources */,
+				FAAFA5AC1BEF855000CC408B /* AnagramViewController.swift in Sources */,
 				FAAFA5811BEECD7200CC408B /* AnagramModel.swift in Sources */,
 				FA7BE53D1BEE88F6005C314B /* MZFormSheetPresentationController.m in Sources */,
+				FAAFA5B51BEF855000CC408B /* StardustView.swift in Sources */,
+				FAAFA5AE1BEF855000CC408B /* Config.swift in Sources */,
 				FA7BE5431BEE88F6005C314B /* MZTransition.m in Sources */,
 				FAAFA5771BEE9B0000CC408B /* FoodItemCollectionViewCell.swift in Sources */,
+				FAAFA5B61BEF855000CC408B /* StopwatchView.swift in Sources */,
+				FAAFA5AD1BEF855000CC408B /* AudioController.swift in Sources */,
 				FA3204AF1BEE40A9007CE6E6 /* Constants.swift in Sources */,
+				FAAFA5B71BEF855000CC408B /* TargetView.swift in Sources */,
 				FAAFA5921BEF2EB700CC408B /* AddMemoriesViewController.swift in Sources */,
 				FAAFA5941BEF361700CC408B /* AnagramTableViewCell.swift in Sources */,
 				FA3204DF1BEE767F007CE6E6 /* Store Model.swift in Sources */,
 				FA3204D41BEE56D7007CE6E6 /* PetModel.swift in Sources */,
+				FAAFA5B21BEF855000CC408B /* GameData.swift in Sources */,
 				FA7BE5411BEE88F6005C314B /* MZFormSheetPresentationViewControllerSegue.m in Sources */,
 				FA7BE5421BEE88F6005C314B /* MZMethodSwizzler.m in Sources */,
 			);

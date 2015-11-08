@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>anagrams</key>
+	<array>
+		<array>
+			<string>iwaHai</string>
+			<string>Hawaii</string>
+			<string>Where did you go on vacation in 2014?</string>
+		</array>
+		<array>
+			<string>admirer</string>
+			<string>married</string>
+			<string>QUESTION ADDQUESTION ADDQUESTION ADDQUESTION ADDQUESTION ADDQUESTION ADD</string>
+		</array>
+		<array>
+			<string>debit card</string>
+			<string>bad credit</string>
+			<string>QUESTION ADDQUESTION ADDQUESTION ADDQUESTION ADDQUESTION ADDQUESTION ADDQUESTION ADD</string>
+		</array>
+		<array>
+			<string>elvis</string>
+			<string>lives</string>
+			<string>QUESTION ADDQUESTION ADDQUESTION ADDQUESTION ADDQUESTION ADDQUESTION ADDQUESTION ADD</string>
+		</array>
+		<array>
+			<string>listen</string>
+			<string>silent</string>
+			<string>QUESTION ADDQUESTION ADDQUESTION ADDQUESTION ADDQUESTION ADDQUESTION ADD</string>
+		</array>
+		<array>
+			<string>the eyes</string>
+			<string>they see</string>
+			<string>QUESTION ADDQUESTION ADDQUESTION ADDQUESTION ADDQUESTION ADDQUESTION ADDQUESTION ADD</string>
+		</array>
+	</array>
+	<key>timeToSolve</key>
+	<integer>600</integer>
+	<key>pointsPerTile</key>
+	<integer>10</integer>
+</dict>
+</plist>
